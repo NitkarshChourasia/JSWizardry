@@ -76,3 +76,8 @@ _________
 */
 //Your code should go here:
 
+function addition(num1, num2){
+	return num1 + num2
+}
+
+console.log(addition(5, 9))
