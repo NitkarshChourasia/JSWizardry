@@ -76,3 +76,15 @@ _________
 */
 //Your code should go here:
 
+function addition(num) {
+    return num + 1;
+}
+
+if (require.main == module)
+{
+    console.log(addition(5))
+
+    console.log(addition(0))
+    console.log(addition(9))
+    console.log(addition(-3))
+}
