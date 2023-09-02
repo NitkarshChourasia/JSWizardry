@@ -56,3 +56,13 @@ _________
 */
 //Your code should go here:
 
+function circuitPower(voltage, current) {
+    return voltage * current;
+}
+
+
+if (require.main == module) {
+    console.log(circuitPower(230, 10))
+    console.log(circuitPower(110, 3))
+    console.log(circuitPower(480, 20))
+}
