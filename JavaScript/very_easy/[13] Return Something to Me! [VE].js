@@ -1,7 +1,8 @@
 /*
 ####  Return Something to Me!  ####
 
-Write a function that returns the string "something" joined with a space " " and the given argument a.
+Write a function that returns the string 
+"something" joined with a space " " and the given argument a.
 
 
 [Examples]
@@ -56,3 +57,16 @@ _________
 */
 //Your code should go here:
 
+function giveMeSomething(input_string) {
+    return `something ${input_string}`
+}
+
+
+if (require.main == module) {
+    console.log(giveMeSomething("is better than nothing"))
+    console.log(giveMeSomething("Bob Jane"))
+    console.log(giveMeSomething("something"))
+}
+
+
+// complete.
