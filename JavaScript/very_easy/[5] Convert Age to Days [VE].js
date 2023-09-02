@@ -51,3 +51,14 @@ _________
 */
 //Your code should go here:
 
+function calcAge(ageYears) {
+    return ageYears * 365;
+
+}
+
+if (require.main == console)
+{
+    console.log(calcAge(65))
+    console.log(calcAge(0))
+    console.log(calcAge(20))
+}
