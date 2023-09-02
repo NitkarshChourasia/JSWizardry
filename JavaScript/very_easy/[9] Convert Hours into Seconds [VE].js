@@ -55,3 +55,14 @@ _________
 */
 //Your code should go here:
 
+function howManySeconds(hours) {
+    return hours * 60 * 60;
+    // return hours * 3600;
+    // return hours * Math.pow(60, 2);
+}
+
+if (require.main == module) {
+    console.log(howManySeconds(2))
+    console.log(howManySeconds(10))
+    console.log(howManySeconds(24))
+}
