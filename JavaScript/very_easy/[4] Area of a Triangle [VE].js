@@ -51,7 +51,8 @@ _________
 _________
 JavaScript Operators
 https://www.w3schools.com/js/js_operators.asp
-The examples above uses 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers. Because of this, in JavaScript, ~ 5 will not return 10. It will return -6. …
+The examples above uses 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers.
+ Because of this, in JavaScript, ~ 5 will not return 10. It will return -6. …
 _________
 _________
 Arithmetic Operators
@@ -77,3 +78,14 @@ _________
 */
 //Your code should go here:
 
+
+function triArea(base, height) {
+    return (base * height) / 2;
+}
+
+if (require.main == module) {
+
+    console.log(triArea(3, 2))
+    console.log(triArea(7, 4))
+    console.log(triArea(10, 10))
+}
