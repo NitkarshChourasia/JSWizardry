@@ -71,3 +71,15 @@ _________
 */
 //Your code should go here:
 
+function getFirstValue(arr) {
+    return arr[0];
+}
+
+
+if (require.main == console) {
+
+    console.log(getFirstValue([1, 2, 3]))
+    console.log(getFirstValue([80, 5, 100]))
+    console.log(getFirstValue([-500, 0, 50]))
+
+}
