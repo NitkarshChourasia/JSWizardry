@@ -11,7 +11,7 @@ comp("AB", "CD") ➞ true
 
 comp("ABC", "DE") ➞ false
 
-comp("hello", "edabit") ➞ false
+comp("hello", "health") ➞ false
 _____
 
 
@@ -56,3 +56,14 @@ _________
 */
 //Your code should go here:
 
+function comp(str1, str2) {
+    return str1.length === str2.length;
+}
+
+if (require.main == module) {
+    console.log(comp("AB", "CD"));
+    console.log(comp("ABC", "DE"));
+    console.log(comp("hello", "health"));
+}
+
+// complete.
