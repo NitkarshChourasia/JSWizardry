@@ -4,7 +4,7 @@
 Create a function that returns the given argument, but by using an arrow function.
 An arrow function is constructed like so:
 ___
-arrowFunc=(/*parameters*/)=>//code here
+arrowFunc=(\/parameters\/)=>//code here
 _____
 
 
@@ -56,3 +56,14 @@ _________
 */
 //Your code should go here:
 
+
+const arrowFunc = (arg) => arg;
+
+
+if (require.main == module) {
+    console.log(arrowFunc(3))
+    console.log(arrowFunc("3"))
+    console.log(arrowFunc(true))
+}
+
+// complete.
