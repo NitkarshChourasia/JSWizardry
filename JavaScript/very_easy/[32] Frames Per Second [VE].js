@@ -36,3 +36,14 @@ _________
 */
 //Your code should go here:
 
+function frames(framesPerSecond, minutes) {
+    return framesPerSecond * 60 * minutes
+}
+
+if (require.main == module) {
+    console.log(frames(1, 1))
+    console.log(frames(10, 1))
+    console.log(frames(10, 25))
+}
+
+// complete.
