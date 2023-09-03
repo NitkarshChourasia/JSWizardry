@@ -61,3 +61,15 @@ _________
 */
 //Your code should go here:
 
+function convert(hours, minutes){
+    return (hours * Math.pow(60, 2)) + (minutes * 60)
+}
+
+if (require.main == module)
+{
+    console.log(convert(1, 3))
+    console.log(convert(2, 0))
+    console.log(convert(0, 0))
+}
+
+// complete.
