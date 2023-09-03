@@ -56,3 +56,16 @@ _________
 */
 //Your code should go here:
 
+function isSeven(x) {
+    return x === 7;
+}
+
+
+if (require.main == module) {
+
+    console.log(isSeven(4))
+    console.log(isSeven(9))
+    console.log(isSeven(7))
+}
+
+// complete.
