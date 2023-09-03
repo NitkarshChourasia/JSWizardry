@@ -61,3 +61,15 @@ _________
 */
 //Your code should go here:
 
+function divisible(num) {
+    return num % 100 === 0;
+}
+
+if (require.main == module) {
+    console.log(divisible(1));
+    console.log(divisible(1000));
+    console.log(divisible(100));
+}
+
+// 04 - 09 - 2023
+// complete.
