@@ -18,13 +18,13 @@ Implement a function that returns true if the parameters are equal, and false if
 
 ___
 checkEquality(1, true) ➞ false
-// A number and a boolean: the value and type are different.
+-> A number and a boolean: the value and type are different.
 
 checkEquality(0, "0") ➞ false
-// A number and a string: the type is different.
+-> A number and a string: the type is different.
 
 checkEquality(1,  1) ➞ true
-// A number and a number: the type and value are equal.
+-> A number and a number: the type and value are equal.
 _____
 
 
@@ -73,3 +73,16 @@ _________
 */
 //Your code should go here:
 
+
+function checkEquality(a, b){
+    return a === b
+}
+
+if (require.main == module)
+{
+    console.log(checkEquality(1, true))
+    console.log(checkEquality(0, "0"))
+    console.log(checkEquality(1,  1))
+}
+
+// complete.
