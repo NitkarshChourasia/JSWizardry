@@ -1,7 +1,7 @@
 /*
 ####  Buggy Code (Part 7)  ####
 
-Mubashir wants to swap two given numbers!
+Nitkarsh wants to swap two given numbers!
 It is not returning the right values. Can you help him fix it?
 ___
 a = 100
@@ -59,3 +59,17 @@ _________
 */
 //Your code should go here:
 
+function swap(input_number1, input_number2){
+    temp = input_number1
+    input_number1 = input_number2
+    input_number2 = temp
+    return [input_number1, input_number2]
+}
+
+if (require.main == module) {
+    console.log(swap(100, 200))
+    console.log(swap(44, 33))
+    console.log(swap(21, 12))
+}
+
+// complete.
