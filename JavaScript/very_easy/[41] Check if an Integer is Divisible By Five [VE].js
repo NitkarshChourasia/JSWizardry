@@ -76,7 +76,7 @@ function DivisibleByFive(number) {
     return number % 5 === 0;
 }
 
-if (require.main == module){
+if (require.main == module) {
     console.log(DivisibleByFive(5));
     console.log(DivisibleByFive(-55));
     console.log(DivisibleByFive(37));
