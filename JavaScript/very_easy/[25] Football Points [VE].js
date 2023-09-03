@@ -36,7 +36,8 @@ Inputs will be numbers greater than or equal to 0.
 _________
 JavaScript Arithmetic
 https://www.w3schools.com/js/js_arithmetic.asp
-In arithmetic, the division of two integers produces a quotient and a remainder. In mathematics, the result of a modulo operation is the remainder of an arithmetic div …
+In arithmetic, the division of two integers produces a quotient and a remainder.
+ In mathematics, the result of a modulo operation is the remainder of an arithmetic div …
 _________
 _________
 Using Math Expressions in JavaScript
@@ -62,3 +63,14 @@ _________
 */
 //Your code should go here:
 
+function footballPoints(wins, draws, losses) {
+    return wins * 3 + draws
+}
+
+if (require.main == module ){
+    console.log(footballPoints(3, 4, 2))
+    console.log(footballPoints(5, 0, 2))
+    console.log(footballPoints(0, 0, 1))
+}
+
+// complete.
