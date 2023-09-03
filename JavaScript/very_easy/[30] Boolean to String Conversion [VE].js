@@ -74,3 +74,15 @@ _________
 */
 //Your code should go here:
 
+function boolToString(flag) {
+    // To add lots of restrictions is left, to do.
+    return flag.toString();
+}
+
+
+if (require.main == module) {
+    console.log(boolToString(true));
+    console.log(boolToString(false));
+}
+
+// complete.
