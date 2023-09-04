@@ -8,10 +8,10 @@ Given two integers, a and b, return true if a can be divided evenly by b. Return
 
 ___
 dividesEvenly(98, 7) ➞ true
-// 98/7 = 14
+98/7 = 14
 
 dividesEvenly(85, 4) ➞ false
-// 85/4 = 21.25
+85/4 = 21.25
 _____
 
 
@@ -21,7 +21,7 @@ _____
 a will always be greater than or equal to b.
 
 
-[math] [numbers] [validation] 
+[math] [numbers] [validation]
 
 
 
@@ -81,3 +81,19 @@ _________
 */
 //Your code should go here:
 
+function dividesEvenly(a, b) {
+    return a % b === 0;
+}
+
+if (require.main == module) {
+    console.log(dividesEvenly(98, 7));
+    console.log(dividesEvenly(85, 4));
+
+    console.log();
+
+    console.log(dividesEvenly(100, 20));
+    console.log(dividesEvenly(100, 3));
+}
+
+// 04-09-2023
+// complete.
