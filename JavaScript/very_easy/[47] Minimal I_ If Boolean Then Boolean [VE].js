@@ -91,3 +91,22 @@ _________
 */
 //Your code should go here:
 
+
+function parityCheck(num) {
+  return num % 2 === 0;
+}
+
+if (require.main == module) {
+  console.log(parityCheck(2));
+  console.log(parityCheck(10));
+
+  console.log() // Blank line for readability.
+
+  console.log(parityCheck(3));
+  console.log(parityCheck(7));
+  console.log(parityCheck(21));
+}
+
+
+// 04-09-2023
+// complete.
