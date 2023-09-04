@@ -7,9 +7,9 @@ The challenge is to try and fix this buggy code, given the inputs true and false
 [Examples]
 
 ___
-has_bugs(true) ➞ "sad days"
+has_bugs(true) ➞ "Sad day."
 
-has_bugs(false) ➞ "it's a good day"
+has_bugs(false) ➞ "It's a good day."
 _____
 
 
@@ -54,3 +54,14 @@ _________
 */
 //Your code should go here:
 
+function hasBugs(flag) {
+    return flag ? "Sad day." : "It's a good day.";
+}
+
+if (require.main == module) {
+    console.log(hasBugs(true));
+    console.log(hasBugs(false));
+}
+
+// 04-09-2023
+// complete.
