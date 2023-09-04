@@ -74,9 +74,24 @@ _________
 _________
 parseInt() Function
 https://www.w3schools.com/jsref/jsref_parseint.asp
-The radix parameter is used to specify which numeral system to be used, for  example, a radix of 16 (hexadecimal) indicates that the number in the string  should be p …
+The radix parameter is used to specify which numeral system to be used, for 
+ example, a radix of 16 (hexadecimal) indicates that the number in the string 
+ should be p …
 _________
 
 */
 //Your code should go here:
 
+
+function stringInt(strNum) {
+    return parseInt(strNum);
+}
+
+if (require.main == module) {
+    console.log(stringInt("6"));
+    console.log(stringInt("1000"));
+    console.log(stringInt("12"));
+}
+
+// 04-09-2023
+// complete.
