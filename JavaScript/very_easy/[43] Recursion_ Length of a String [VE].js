@@ -83,3 +83,24 @@ _________
 */
 //Your code should go here:
 
+function length(stringInput) {
+    // Base Case
+    if (stringInput === "") {
+        return 0;
+    }
+    // Recursive Case
+    else {
+        return 1 + length(stringInput.substring(1));
+    }
+}
+
+if (require.main == module) {
+    console.log(length("apple"));
+    console.log(length("make"));
+    console.log(length("a"));
+    console.log(length(""));
+}
+
+
+// 04-09-2023
+// complete.
