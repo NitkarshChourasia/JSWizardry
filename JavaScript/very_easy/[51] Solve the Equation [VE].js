@@ -51,3 +51,26 @@ _________
 */
 //Your code should go here:
 
+equation = input_equation => eval(input_equation);
+
+function eqFunc(input_equation) {
+    return eval(input_equation);
+
+}
+
+
+if (require.main == module) {
+    console.log(equation("1+1"));
+    console.log(equation("7*4-2"));
+    console.log(equation("1+1+1+1+1"));
+
+    console.log(); // Blank line for better code readability.
+
+    console.log(eqFunc("1+1"));
+    console.log(eqFunc("7*4-2"));
+    console.log(eqFunc("1+1+1+1+1"));
+}
+
+
+// 04-09-2023
+// complete.
