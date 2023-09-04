@@ -107,6 +107,5 @@ if (require.main == module) {
   console.log(parityCheck(21));
 }
 
-
 // 04-09-2023
 // complete.
