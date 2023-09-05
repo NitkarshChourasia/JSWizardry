@@ -67,3 +67,25 @@ _________
 */
 //Your code should go here:
 
+function calculateExponent(num, exp) {
+    return Math.pow(num, exp);
+}
+
+function calculateExponentVanilla(num, exp) {
+    return num ** exp;
+}
+
+if (require.main == module) {
+    console.log(calculateExponent(5, 5));
+    console.log(calculateExponent(10, 10));
+    console.log(calculateExponent(3, 3));
+
+    console.log(); // Blank line for readability.
+
+    console.log(calculateExponentVanilla(5, 5));
+    console.log(calculateExponentVanilla(10, 10));
+    console.log(calculateExponentVanilla(3, 3));
+}
+
+// 05-09-2023
+// complete.
