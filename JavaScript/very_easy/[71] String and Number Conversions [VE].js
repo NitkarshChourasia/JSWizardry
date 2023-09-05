@@ -66,3 +66,71 @@ _________
 */
 //Your code should go here:
 
+// Int to string.
+
+function intToStringLiteralBacktick(num) {
+    return `${num}`;
+}
+
+function intToStringLiteral(num) {
+    return num + "";
+}
+
+function intToStringCase(num) {
+    return String(num);
+}
+
+function intToStringMethod(num) {
+    return num.toString();
+}
+
+// Separator.
+
+// String to int.
+
+function stringToIntParse(num) {
+    return parseInt(num);
+}
+
+
+// This function uses the unary plus operator (+) to convert a string to a number.
+function stringToIntUnary(num) {
+    return +num;
+}
+
+function stringToIntNumberMethod(num) {
+    return Number(num);
+}
+
+function stringToIntNumberInt(num) {
+    return Number.parseInt(num);
+}
+
+function stringToIntNumberFloat(num) {
+    return Number.parseFloat(num);
+}
+
+
+// Conversion using substraction operator.
+function stringToIntSubstraction(num) {
+    return num - 0;
+}
+
+if (require.main == module){
+    console.log(intToStringLiteralBacktick(4));
+    console.log(intToStringLiteral(4));
+    console.log(intToStringCase(4));
+    console.log(intToStringMethod(4));
+
+    console.log(); // Blank line for readability.
+
+    console.log(stringToIntParse("4"));
+    console.log(stringToIntUnary("4"));
+    console.log(stringToIntNumberMethod("4"));
+    console.log(stringToIntNumberInt("4"));
+    console.log(stringToIntNumberFloat("4"));
+    console.log(stringToIntSubstraction("4"));
+}
+
+// 05-09-2023
+// complete.
