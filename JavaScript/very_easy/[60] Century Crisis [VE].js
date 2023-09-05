@@ -43,3 +43,18 @@ _________
 */
 //Your code should go here:
 
+function futurePeople(currentPopulation, newBirths) {
+    let totalMonths = 30 * 12;
+    let totalBirths = totalMonths * newBirths;
+    let futurePopulation = currentPopulation + totalBirths;
+    return futurePopulation;
+}
+
+if (require.main == module) {
+    console.log(futurePeople(256, 2));
+    console.log(futurePeople(3248, 6));
+    console.log(futurePeople(5240, 3));
+}
+
+// 05-09-2023
+// complete.
