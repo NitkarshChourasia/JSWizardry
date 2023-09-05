@@ -56,3 +56,19 @@ _________
 */
 //Your code should go here:
 
+
+function incrementItems(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] += 1;
+    }
+    return arr;
+}
+
+if (require.main == module) {
+    console.log(incrementItems([0, 1, 2, 3]));
+    console.log(incrementItems([2, 4, 6, 8]));
+    console.log(incrementItems([-1, -2, -3, -4]));
+}
+
+// 05-9-2023
+// complete.
