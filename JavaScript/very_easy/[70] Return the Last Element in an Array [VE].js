@@ -56,3 +56,26 @@ _________
 */
 //Your code should go here:
 
+function getLastItem(arr) {
+    return arr.pop();
+}
+
+function getLastItemSqBrackets(arr) {
+    return arr[arr.length - 1];
+}
+
+if (require.main == module) {
+    console.log(getLastItem([1, 2, 3]));
+    console.log(getLastItem(["cat", "dog", "duck"]));
+    console.log(getLastItem([true, false, true]));
+
+    console.log(); // separator.
+
+    console.log(getLastItemSqBrackets([1, 2, 3]));
+    console.log(getLastItemSqBrackets(["cat", "dog", "duck"]));
+    console.log(getLastItemSqBrackets([true, false, true]));
+}
+
+
+// 05-09-2023
+// complete.
