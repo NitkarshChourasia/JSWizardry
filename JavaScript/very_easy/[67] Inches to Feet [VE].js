@@ -68,6 +68,12 @@ if (require.main == module){
     console.log(inchesToFeet(324));
     console.log(inchesToFeet(12));
     console.log(inchesToFeet(36));
+
+    console.log();
+
+    console.log(inchesToFeet(11));
+    console.log(inchesToFeet(0));
+    console.log(inchesToFeet(1));
 }
 
 
