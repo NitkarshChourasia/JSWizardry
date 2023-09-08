@@ -70,3 +70,26 @@ _________
 */
 //Your code should go here:
 
+
+function search(arr, i) {
+    if (arr.includes(i)) {
+        return arr.indexOf(i)
+    }
+    return -1
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(search([1, 2, 3, 4], 3));
+    console.log(search([2, 4, 6, 8, 10], 8));
+    console.log(search([1, 3, 5, 7, 9], 11));
+
+    console.log(); // Blank line for readability.
+
+    // My test cases.
+
+    console.log(search([1, 3, 5, 7, 9], 1));
+    console.log(search([1, 3, 5, 7, 9], 1213));
+    console.log(search([1, 3, 5, 7, 9], 11423));
+}
