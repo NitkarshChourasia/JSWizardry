@@ -70,3 +70,33 @@ _________
 */
 //Your code should go here:
 
+function concat(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+
+// To test them in test files.
+function concatAnotherMethod(arr, arr2) {
+    return [...arr, ...arr2];
+}
+
+function concatAnotherMethod2(arr, arr2) {
+    return arr.concat(...arr2);
+}
+
+function concatAnotherMethod3(arr, arr2) {
+    return [...arr, arr2];
+}
+
+function concatAnotherMethod4(arr, arr2) {
+    return arr.concat(arr2);
+}
+
+
+if (require.main == module) {
+    console.log(concat([1, 3, 5], [2, 6, 8]))
+    console.log(concat([7, 8], [10, 9, 1, 1, 2]))
+    console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]))
+}
+
+// 08-09-2023
+// complete.
