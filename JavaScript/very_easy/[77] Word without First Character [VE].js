@@ -66,3 +66,23 @@ _________
 */
 //Your code should go here:
 
+function newWord(word) {
+    return word.slice(1, word.length);
+}
+
+
+if (require.main == module) {
+    // Test cases.
+    console.log(newWord("apple"));
+    console.log(newWord("cherry"));
+    console.log(newWord("plum"));
+
+    console.log();
+
+    // My test cases.
+    console.log(newWord("Nitkarsh"));
+}
+
+
+// 08-09-2023
+// complete.
