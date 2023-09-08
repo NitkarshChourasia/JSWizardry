@@ -70,7 +70,6 @@ if (require.main == module) {
 
     console.log(stackBoxes(3));
     console.log(stackBoxes(4));
-
 }
 
 // 08-09-2023
