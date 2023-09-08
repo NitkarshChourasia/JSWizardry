@@ -36,7 +36,9 @@ ___
 _________
 JavaScript Arrow Function
 https://www.w3schools.com/js/js_arrow_function.asp
-It gets shorter! If the function has only one statement, and the statement  returns a value, you can remove the brackets and the return keyword:
+It gets shorter! If the function has only one statement, and the statement 
+ returns a value, you can remove the brackets and the
+ return keyword:
 _________
 _________
 Arrow Functions for Beginners
@@ -82,3 +84,22 @@ _________
 */
 //Your code should go here:
 
+
+helloName = name => `Hello ${name}!`
+
+if (require.main == module) {
+
+    // Test cases.
+
+    console.log(helloName("Gerald"));
+    console.log(helloName("Tiffany"));
+    console.log(helloName("Ed"));
+
+
+    // My test cases.
+
+    console.log(helloName("Nitkarsh"));
+}
+
+// 08-09-2023
+// complete.
