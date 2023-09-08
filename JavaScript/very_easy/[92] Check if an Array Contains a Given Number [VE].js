@@ -53,3 +53,19 @@ _________
 */
 //Your code should go here:
 
+function check(arr, num) {
+    return arr.includes(num);
+}
+
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(check([1, 2, 3, 4, 5], 3));
+    console.log(check([1, 1, 2, 1, 1], 3));
+    console.log(check([5, 5, 5, 6], 5));
+    console.log(check([], 5));
+}
+
+// 08-09-2023
+// complete.
