@@ -69,7 +69,6 @@ if (require.main == module) {
     console.log(typeof arrayToString([1, 2, 3, 4, 5, 6]));
     console.log(typeof (arrayToString(["a", "b", "c", "d", "e", "f"])));
     console.log(typeof (arrayToString([1, 2, 3, "a", "s", "dAAAA"])));
-
 }
 
 // 08-09-2023
