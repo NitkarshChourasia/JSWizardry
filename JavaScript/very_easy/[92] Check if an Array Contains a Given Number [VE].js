@@ -57,7 +57,6 @@ function check(arr, num) {
     return arr.includes(num);
 }
 
-
 if (require.main == module) {
     // Test cases.
 
