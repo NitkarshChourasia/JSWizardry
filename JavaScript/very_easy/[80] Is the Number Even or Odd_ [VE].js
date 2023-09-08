@@ -67,3 +67,16 @@ _________
 */
 //Your code should go here:
 
+function isEvenOrOdd(number) {
+    return number % 2 ? "odd" : "even";
+}
+
+
+if (require.main == module) {
+    console.log(isEvenOrOdd(3));
+    console.log(isEvenOrOdd(146));
+    console.log(isEvenOrOdd(19));
+}
+
+// 08-09-2023
+// complete.
