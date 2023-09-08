@@ -45,7 +45,8 @@ _________
 _________
 JavaScript Objects
 https://www.w3schools.com/js/js_object_definition.asp
-The two examples above do exactly the same. There is no need to use new Object(). For simplicity, readability and execution speed, use the first one (the object litera …
+The two examples above do exactly the same. There is no need to use new Object().
+ For simplicity, readability and execution speed, use the first one (the object litera …
 _________
 _________
 for...in statement
@@ -81,3 +82,18 @@ _________
 */
 //Your code should go here:
 
+
+function volumeOfBox(obj) {
+    return obj.width * obj.length * obj.height;
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(volumeOfBox({ width: 2, length: 5, height: 1 }));
+    console.log(volumeOfBox({ width: 4, length: 2, height: 2 }));
+    console.log(volumeOfBox({ width: 2, length: 3, height: 5 }));
+}
+
+// 08-09-2023
+// complete.
