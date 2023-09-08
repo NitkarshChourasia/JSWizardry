@@ -69,3 +69,19 @@ _________
 */
 //Your code should go here:
 
+function hasSpaces(str) {
+    return str.includes(" ");
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(hasSpaces("hello"));
+    console.log(hasSpaces("hello, world"));
+    console.log(hasSpaces(" "));
+    console.log(hasSpaces(""));
+    console.log(hasSpaces(",./!@#"));
+}
+
+// 08-09-2023
+// complete.
