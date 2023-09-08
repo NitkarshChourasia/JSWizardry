@@ -93,3 +93,6 @@ if (require.main == module) {
     console.log(search([1, 3, 5, 7, 9], 1213));
     console.log(search([1, 3, 5, 7, 9], 11423));
 }
+
+// 08-09-2023
+// complete.
