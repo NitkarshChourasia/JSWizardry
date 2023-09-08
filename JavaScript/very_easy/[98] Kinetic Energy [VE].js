@@ -64,3 +64,17 @@ _________
 */
 //Your code should go here:
 
+function kineticEnergy(mass, velocity) {
+    return Math.round(0.5 * mass * Math.pow(velocity, 2));
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(kineticEnergy(60, 3));
+    console.log(kineticEnergy(45, 10));
+    console.log(kineticEnergy(63.5, 7.35));
+}
+
+// 08-09-2023
+// complete.
