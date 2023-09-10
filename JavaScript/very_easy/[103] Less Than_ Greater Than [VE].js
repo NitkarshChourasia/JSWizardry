@@ -56,3 +56,69 @@ _________
 */
 //Your code should go here:
 
+function arrBetween(num1, num2, arr) {
+    return arr.filter((x) => x > num1 && x < num2);
+}
+
+function arrBetweenWhile(num1, num2, arr) {
+    let result = [];
+    let i = 0;
+    while (i < arr.length) {
+        if (arr[i] > num1 && arr[i] < num2) {
+            result.push(arr[i]);
+        }
+        i++;
+    }
+    return result;
+}
+
+function arrBetweenFor(num1, num2, arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > num1 && arr[i] < num2) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+
+function arrBetweenForOf(num1, num2, arr) {
+    let result = [];
+    for (const x of arr) {
+        if (x > num1 && x < num2) {
+            result.push(x);
+        }
+    }
+    return result;
+}
+
+
+if (require.main == module) {
+
+    // Test cases.
+    console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7]));
+    console.log(arrBetween(1, 10, [1, 10, 25, 8, 11, 6]));
+    console.log(arrBetween(7, 32, [1, 2, 3, 78]));
+
+    console.log(); // Blank line for readability.
+
+    console.log(arrBetweenWhile(3, 8, [1, 5, 95, 0, 4, 7]));
+    console.log(arrBetweenWhile(1, 10, [1, 10, 25, 8, 11, 6]));
+    console.log(arrBetweenWhile(7, 32, [1, 2, 3, 78]));
+
+    console.log(); // Blank line for readability.
+
+    console.log(arrBetweenFor(3, 8, [1, 5, 95, 0, 4, 7]));
+    console.log(arrBetweenFor(1, 10, [1, 10, 25, 8, 11, 6]));
+    console.log(arrBetweenFor(7, 32, [1, 2, 3, 78]));
+
+    console.log(); // Blank line for readability.
+
+    console.log(arrBetweenForOf(3, 8, [1, 5, 95, 0, 4, 7]));
+    console.log(arrBetweenForOf(1, 10, [1, 10, 25, 8, 11, 6]));
+    console.log(arrBetweenForOf(7, 32, [1, 2, 3, 78]));
+
+}
+
+// 10-09-2023
+// complete.
