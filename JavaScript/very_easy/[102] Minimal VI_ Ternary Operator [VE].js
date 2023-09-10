@@ -78,3 +78,17 @@ _________
 */
 //Your code should go here:
 
+function twoBoolean(x, y) {
+  return x && y ? "both" : x ? "first" : y ? "second" : "neither";
+}
+
+if (require.main == module) {
+  // Test cases.
+  console.log(twoBoolean(true, true));
+  console.log(twoBoolean(false, true));
+  console.log(twoBoolean(true, false));
+  console.log(twoBoolean(false, false));
+}
+
+// 10-09-2023
+// complete.
