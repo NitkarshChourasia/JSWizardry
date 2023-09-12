@@ -71,11 +71,11 @@ _________
 // What and how to convert input num into any kind base num.
 
 
-function operate(num1, num2, operator) {
+function operateEval(num1, num2, operator) {
     return eval(num1 + operator + num2);
 } // The worst harmful method.
 
-function operate(num1, num2, operator) {
+function operateSwitch(num1, num2, operator) {
     switch (operator) {
         case "+":
             return num1 + num2;
@@ -84,7 +84,7 @@ function operate(num1, num2, operator) {
         case "*":
             return num1 * num2;
         case "/":
-            if num2 == 0 {
+            if (num2 == 0) {
                 return "Divide by zero error.";
             }
             return num1 / num2;
@@ -97,14 +97,15 @@ function operate(num1, num2, operator) {
 
 if (require.main == module) {
     // Test cases.
-    console.log(operate(1, 2, "+"));
-    console.log(operate(7, 10, "-"));
-    console.log(operate(20, 10, "%"));
-    // Custom test cases.
-    console.log(operate(20, 0, "/"));
-    console.log(operate(20, 10, "/"));
-    console.log(operate(20, 10, "*"));
-    console.log(operate(20, 10, "a"));
+    console.log(operateEval(1, 2, "+"));
+    console.log(operateEval(7, 10, "-"));
+    console.log(operateEval(20, 10, "%"));
+
+    console.log(); // Blank line for readability.
+
+    console.log(operateSwitch(1, 2, "+"));
+    console.log(operateSwitch(7, 10, "-"));
+    console.log(operateSwitch(20, 10, "%"));
 }
 
 // 12-09-2023
