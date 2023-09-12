@@ -59,3 +59,32 @@ _________
 */
 //Your code should go here:
 
+function numArgs() {
+    return arguments.length;
+}
+
+function numArgsRest(...args) {
+    return args.length;
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(numArgs());
+    console.log(numArgs("foo"));
+    console.log(numArgs("foo", "bar"));
+    console.log(numArgs(true, false));
+    console.log(numArgs({}));
+
+    console.log("Rest parameters:"); // Rest parameters.
+
+    console.log(numArgsRest());
+    console.log(numArgsRest("foo"));
+    console.log(numArgsRest("foo", "bar"));
+    console.log(numArgsRest(true, false));
+    console.log(numArgsRest({}));
+
+}
+
+// 12-09-2023
+// complete.
