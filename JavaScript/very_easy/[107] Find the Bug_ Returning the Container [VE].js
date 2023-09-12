@@ -49,3 +49,21 @@ _________
 */
 //Your code should go here:
 
+function getContainer(product) {
+    packagingProducts = { "bread": "bag", "beer": "bottle", "candy": "plastic" }
+    product = product.toLowerCase();
+    return packagingProducts.hasOwnProperty(product) ? packagingProducts[product] : null;
+}
+
+
+if (require.main == module) {
+    // Test cases.
+    console.log(getContainer("Bread"));
+    console.log(getContainer("Beer"));
+    console.log(getContainer("Candy"));
+    console.log(getContainer("Cheese"));
+    console.log(getContainer("Milk"));
+}
+
+// 12-09-2023
+// complete.
