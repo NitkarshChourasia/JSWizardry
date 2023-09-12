@@ -59,3 +59,17 @@ _________
 */
 //Your code should go here:
 
+
+function hasSameBread(sandwich1, sandwich2) {
+  return sandwich1[0] === sandwich2[0] && sandwich1[sandwich1.length - 1] === sandwich2[sandwich2.length - 1];
+}
+
+if (require.main == module) {
+  // Test cases.
+  console.log(hasSameBread(["white bread", "lettuce", "white bread"], ["white bread", "tomato", "white bread"]));
+  console.log(hasSameBread(["brown bread", "chicken", "brown bread"], ["white bread", "chicken", "white bread"]));
+  console.log(hasSameBread(["toast", "cheese", "toast"], ["brown bread", "cheese", "toast"]));
+}
+
+// 12-09-2023
+// complete.
