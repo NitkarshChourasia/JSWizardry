@@ -65,7 +65,8 @@ _________
 _________
 Arithmetic
 https://www.w3schools.com/js/js_arithmetic.asp
-In arithmetic, the division of two integers produces a quotient and a remainder. In mathematics, the result of a modulo operation is the remainder of an arithmetic div …
+In arithmetic, the division of two integers produces a quotient and a remainder.
+ In mathematics, the result of a modulo operation is the remainder of an arithmetic div …
 _________
 _________
 Arithmetic Operators
@@ -76,8 +77,12 @@ _________
 */
 //Your code should go here:
 
-function addition(num1, num2){
+function addition(num1, num2) {
 	return num1 + num2
 }
 
-console.log(addition(5, 9))
+if (require.main == module) {
+
+	// Test Cases.
+	console.log(addition(5, 9))
+}
