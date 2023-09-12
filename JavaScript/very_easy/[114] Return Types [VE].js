@@ -58,3 +58,17 @@ _________
 */
 //Your code should go here:
 
+function arrayValuesTypes(arr) {
+    return arr.map(x => typeof x);
+} // Best solution given the situtation.
+
+
+if (require.main == module) {
+    console.log("####  Return Types  ####\n")
+
+    // Test cases.
+    console.log(arrayValuesTypes([1, 2, "null", []]));
+    console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
+    console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
+
+}
