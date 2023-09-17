@@ -59,3 +59,47 @@ _________
 */
 //Your code should go here:
 
+function cityFacts(cityInfo) {
+  return `${cityInfo.name} has a population of ${cityInfo.population} and is situated in ${cityInfo.continent}`;
+}
+
+
+// function cityFactsSqBrackets(cityInfo) {
+//   return `${cityInfo[cityInfo.name]} has a population of ${cityInfo[cityInfo.population]} and is situated in ${cityInfo[cityInfo.continent]}`;
+// }
+
+if (require.main == module) {
+  console.log("####  Extract City Facts  ####\n")
+  // Test cases.
+  console.log("Using dot notation.");
+  console.log(cityFacts({
+    name: "Paris",
+    population: "2,140,526",
+    continent: "Europe"
+  }));
+
+  console.log(cityFacts({
+    name: "Tokyo",
+    population: "13,929,286",
+    continent: "Asia"
+  }));
+
+
+  // console.log("Using Square brackets.");
+  // console.log(cityFactsSqBrackets({
+  //   name: "Paris",
+  //   population: "2,140,526",
+  //   continent: "Europe"
+  // }));
+
+  // console.log(cityFactsSqBrackets({
+  //   name: "Tokyo",
+  //   population: "13,929,286",
+  //   continent: "Asia"
+  // }));
+
+}
+
+
+// 17-09-2023
+// complete.
