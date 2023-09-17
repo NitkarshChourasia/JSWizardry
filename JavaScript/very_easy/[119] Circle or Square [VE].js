@@ -76,3 +76,71 @@ _________
 */
 //Your code should go here:
 
+// I can also make it OOP based by creating a function or arrow for formulas, and then comparing them for better readability.
+
+// Method 1: Ternary Arrow Function.
+circle_or_squareArrowTernary = (cirRadius, sqArea) => 2 * Math.PI * cirRadius > Math.sqrt(sqArea) * 4 ? true : false;
+
+// I can also use a function to ouput the answers.
+
+// Method 2: Ternary Function.
+
+function circle_or_squareTernaryFunction(cirRadius, sqArea) {
+    return 2 * Math.PI * cirRadius > Math.sqrt(sqArea) * 4 ? true : false;
+}
+
+// Method 3: OOP based.
+function circle_or_squareOOP(cirRadius, sqArea) {
+    let cirumCircle = 2 * Math.PI * cirRadius;
+    let periSq = Math.sqrt(sqArea) * 4;
+    return cirumCircle > periSq;
+}
+
+// Method 4: Simple.
+function circle_or_squareSimple(cirRadius, sqArea) {
+    return 2 * Math.PI * cirRadius > Math.sqrt(sqArea) * 4;
+}
+
+// Method 5: If Else.
+function circle_or_squareIfElse(cirRadius, sqArea) {
+    circumCircle = 2 * Math.PI * cirRadius;
+    sqPeri = Math.sqrt(sqArea) * 4;
+
+    if (circumCircle > sqPeri) {
+        return true;
+    }
+    return false;
+}
+
+
+if (require.main == module) {
+    console.log("#### Circle or Square  ####\n");
+    // Test cases.
+
+    console.log("Method 1: Ternary Arrow Function.");
+    console.log(circle_or_squareArrowTernary(16, 625));
+    console.log(circle_or_squareArrowTernary(5, 100));
+    console.log(circle_or_squareArrowTernary(8, 144));
+
+    console.log("Method 2: Ternary Function.");
+    console.log(circle_or_squareTernaryFunction(16, 625));
+    console.log(circle_or_squareTernaryFunction(5, 100));
+    console.log(circle_or_squareTernaryFunction(8, 144));
+
+    console.log("Method 3: OOP based.");
+    console.log(circle_or_squareOOP(16, 625));
+    console.log(circle_or_squareOOP(5, 100));
+    console.log(circle_or_squareOOP(8, 144));
+
+    console.log("Method 4: Simple.");
+    console.log(circle_or_squareSimple(16, 625));
+    console.log(circle_or_squareSimple(5, 100));
+    console.log(circle_or_squareSimple(8, 144));
+
+    console.log("Method 5: If Else.");
+    console.log(circle_or_squareIfElse(16, 625));
+    console.log(circle_or_squareIfElse(5, 100));
+    console.log(circle_or_squareIfElse(8, 144));
+}
+// 17-09-2023
+// complete.
