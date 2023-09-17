@@ -104,6 +104,8 @@ function isPluralBracket(word) {
 isPluralArrowFunc = word => word.endsWith("s");
 // Can do with all kind of different methods.
 
+// Make it OOP based, instead of hardcoding, do it OOP based.
+
 if (require.main == module) {
     console.log("####  Is the Word Singular or Plural?  ####");
     // Test cases.
