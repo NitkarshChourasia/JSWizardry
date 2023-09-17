@@ -23,7 +23,7 @@ _____
 Accept numbers such as .5 and 0003.
 
 
-[language_fundamentals] [numbers] [validation] 
+[language_fundamentals] [numbers] [validation]
 
 
 
@@ -48,3 +48,51 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+function validStrNumber(n) {
+    return !isNaN(n);
+}
+
+// Understanding these Nan functions, much more clearly.
+
+function validStrNumberNumdotNan(n) {
+    return !Number.isNaN(Number(n));
+}
+
+if (require.main == module) {
+
+    console.log("####  Does a Number Exist?  ####");
+    // Test cases.
+
+    console.log("Method 1: isNaN()");
+    console.log(validStrNumber("3.2")); // true
+    console.log(validStrNumber("324")); // true
+    console.log(validStrNumber("54..4")); // false
+    console.log(validStrNumber("number")); // false
+
+    console.log("Method 2: Number.isNaN()");
+    console.log(validStrNumberNumdotNan("3.2")); // true
+    console.log(validStrNumberNumdotNan("324")); // true
+    console.log(validStrNumberNumdotNan("54..4")); // false
+    console.log(validStrNumberNumdotNan("number")); // false
+
+
+    console.log(); // Blank line for readability.
+    console.log("Custom test cases:")
+    // Custom test cases.
+
+    console.log("Method 1: isNaN()");
+    console.log(validStrNumber("0.5")); // true
+    console.log(validStrNumber("0003")); // true
+
+    console.log("Method 2: Number.isNaN()");
+    console.log(validStrNumberNumdotNan("0.5")); // true
+    console.log(validStrNumberNumdotNan("0003")); // true
+
+}
+
+
+
+// 17-09-2023
+// complete.
