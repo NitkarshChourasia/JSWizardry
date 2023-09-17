@@ -70,3 +70,90 @@ _________
 */
 //Your code should go here:
 
+// Method 1: endsWith() method using function.
+function isPluralEndsWith(word) {
+    return word.endsWith("s");
+}
+
+// Method 2: substring() using function.
+function isPluralSubstr(word) {
+    return word.substr(word.length - 1) === "s";
+}
+
+// Method 3: slice() method using function.
+function isPluralSlice(word) {
+    return word.slice(word.length - 1) === "s";
+}
+
+// Method 4: charAt() method using function.
+function isPluralCharAt(word) {
+    return word.charAt(word.length - 1) === "s";
+}
+
+// Method 5: Bracket slicing method using function with length check (len > 1).
+function isPluralBracketLenCheck(word) {
+    return word.length > 1 && word[word.length - 1] === "s";
+}
+
+// Method 6: Bracket slicing method using function.
+function isPluralBracket(word) {
+    return word[word.length - 1] === "s";
+}
+
+// Method 7: Possibilities of using different ways using arrow function.
+isPluralArrowFunc = word => word.endsWith("s");
+// Can do with all kind of different methods.
+
+if (require.main == module) {
+    console.log("####  Is the Word Singular or Plural?  ####");
+    // Test cases.
+
+    console.log("Method 1: endsWith() method using function.");
+    console.log(isPluralEndsWith("changes"));
+    console.log(isPluralEndsWith("change"));
+    console.log(isPluralEndsWith("dudes"));
+    console.log(isPluralEndsWith("magic"));
+
+    console.log("Method 2: substring() using function.");
+    console.log(isPluralSubstr("changes"));
+    console.log(isPluralSubstr("change"));
+    console.log(isPluralSubstr("dudes"));
+    console.log(isPluralSubstr("magic"));
+
+    console.log("Method 3: slice() method using function.");
+    console.log(isPluralSlice("changes"));
+    console.log(isPluralSlice("change"));
+    console.log(isPluralSlice("dudes"));
+    console.log(isPluralSlice("magic"));
+
+
+    console.log("Method 4: charAt() method using function.");
+    console.log(isPluralCharAt("changes"));
+    console.log(isPluralCharAt("change"));
+    console.log(isPluralCharAt("dudes"));
+    console.log(isPluralCharAt("magic"));
+
+    console.log("Method 5: Bracket slicing method using function with length check (len > 1).");
+    console.log(isPluralBracketLenCheck("changes"));
+    console.log(isPluralBracketLenCheck("change"));
+    console.log(isPluralBracketLenCheck("dudes"));
+    console.log(isPluralBracketLenCheck("magic"));
+
+    console.log("Method 6: Bracket slicing method using function.");
+    console.log(isPluralBracket("changes"));
+    console.log(isPluralBracket("change"));
+    console.log(isPluralBracket("dudes"));
+    console.log(isPluralBracket("magic"));
+
+    console.log("Method 7: Possibilities of using different ways using arrow function.");
+    console.log(isPluralArrowFunc("changes"));
+    console.log(isPluralArrowFunc("change"));
+    console.log(isPluralArrowFunc("dudes"));
+    console.log(isPluralArrowFunc("magic"));
+
+    console.log("---------------------------------------------\n");
+
+}
+
+// 17-09-2023
+// complete.
