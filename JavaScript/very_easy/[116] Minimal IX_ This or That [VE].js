@@ -61,3 +61,30 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+let oneOfThese = (a, b, c, d) => a || b || c || d || "not found";
+
+if (require.main == module) {
+    // Test cases.
+    // Custom test cases.
+    console.log(oneOfThese(0, false, null, undefined)); // "not found"
+    console.log(oneOfThese(0, false, null, "a")); // "a"
+    console.log(oneOfThese(0, false, "b", "a")); // "b"
+    console.log(oneOfThese(0, "c", "b", "a")); // "c"
+    console.log(oneOfThese("d", "c", "b", "a")); // "d"
+
+    console.log(oneOfThese(0)); // "not found"
+    console.log(oneOfThese(0, false)); // "not found"
+    console.log(oneOfThese(0, false, null)); // "not found"
+    console.log(oneOfThese(0, false, null, undefined)); // "not found"
+
+    console.log(oneOfThese("a")); // "a"
+    console.log(oneOfThese("b", "a")); // "b"
+    console.log(oneOfThese("c", "b", "a")); // "c"
+    console.log(oneOfThese("d", "c", "b", "a")); // "d"
+
+}
+
+// 17-09-2023
+// complete.
