@@ -75,4 +75,126 @@ _________
 */
 //Your code should go here:
 
-""
+"use strict";
+
+// Method 1: charAt() method using function.
+function firstLastCharAt(word) {
+    return word.charAt(0) + word.charAt(word.length - 1);
+}
+
+// Method 2: substring() using function.
+function firstLastSubStr(word) {
+    return word.substr(0, 1) + word.substr(word.length - 1, 1);
+}
+
+
+// Method 3: slice() method using function.
+function firstLastSlice(word) {
+    return word.slice(0, 1) + word.slice(word.length - 1);
+}
+
+
+// Method 4: Bracket slicing method using function.
+function firstLastBracket(word) {
+    return word[0] + word[word.length - 1];
+}
+
+
+// Method 5: concat() method using function.
+function firstLastConcat(word) {
+    return "".concat(word[0], word[word.length - 1]);
+}
+
+
+// Method 6: Interpolation method using function.
+function firstLastInterpolation(word) {
+    return `${word[0]}${word[word.length - 1]}`;
+}
+
+
+// Method 7: Spread method using function.
+function firstLastSpread(word) {
+    return [...word][0] + [...word].pop();
+    // or
+    // return [...word][0] + [...word][word.length - 1];
+}
+
+
+// Method 8: Split method using function.
+function firstLastSplit(word) {
+    return word.split("")[0] + word.split("").pop();
+}
+
+
+// This all different ways can be done with arrow function.
+
+if (require.main == module) {
+    console.log("----------");
+    console.log("#### Concatenating First and Last Character of a String  ####");
+    // Test cases.
+
+    console.log("Method 1: charAt() method using function.");
+    console.log(firstLastCharAt("ganesh"));
+    console.log(firstLastCharAt("kali"));
+    console.log(firstLastCharAt("shiva"));
+    console.log(firstLastCharAt("vishnu"));
+    console.log(firstLastCharAt("durga"));
+
+
+    console.log("Method 2: substring() using function.");
+    console.log(firstLastSubStr("ganesh"));
+    console.log(firstLastSubStr("kali"));
+    console.log(firstLastSubStr("shiva"));
+    console.log(firstLastSubStr("vishnu"));
+    console.log(firstLastSubStr("durga"));
+
+
+    console.log("Method 3: slice() method using function.");
+    console.log(firstLastSlice("ganesh"));
+    console.log(firstLastSlice("kali"));
+    console.log(firstLastSlice("shiva"));
+    console.log(firstLastSlice("vishnu"));
+    console.log(firstLastSlice("durga"));
+
+    console.log("Method 4: Bracket slicing method using function.");
+    console.log(firstLastBracket("ganesh"));
+    console.log(firstLastBracket("kali"));
+    console.log(firstLastBracket("shiva"));
+    console.log(firstLastBracket("vishnu"));
+    console.log(firstLastBracket("durga"));
+
+    console.log("Method 5: concat() method using function.");
+    console.log(firstLastConcat("ganesh"));
+    console.log(firstLastConcat("kali"));
+    console.log(firstLastConcat("shiva"));
+    console.log(firstLastConcat("vishnu"));
+    console.log(firstLastConcat("durga"));
+
+    console.log("Method 6: Interpolation method using function.");
+    console.log(firstLastInterpolation("ganesh"));
+    console.log(firstLastInterpolation("kali"));
+    console.log(firstLastInterpolation("shiva"));
+    console.log(firstLastInterpolation("vishnu"));
+    console.log(firstLastInterpolation("durga"));
+
+    console.log("Method 7: Spread method using function.");
+    console.log(firstLastSpread("ganesh"));
+    console.log(firstLastSpread("kali"));
+    console.log(firstLastSpread("shiva"));
+    console.log(firstLastSpread("vishnu"));
+    console.log(firstLastSpread("durga"));
+
+
+    console.log("Method 8: Split method using function.");
+    console.log(firstLastSplit("ganesh"));
+    console.log(firstLastSplit("kali"));
+    console.log(firstLastSplit("shiva"));
+    console.log(firstLastSplit("vishnu"));
+    console.log(firstLastSplit("durga"));
+
+    console.log("----------");
+}
+
+
+// 17-09-2023
+// complete.
