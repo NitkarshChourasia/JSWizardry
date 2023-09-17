@@ -61,9 +61,13 @@ reversePsychology = (str = "do anything") => `Do not ${str}.`;
 if (require.main == module) {
     console.log("####  Reverse Psychology  ####");
     // Test cases.
-    console.log(reversePsychology("wash the dishes"));
-    console.log(reversePsychology("eat your lunch"));
-    console.log(reversePsychology("go to school"));
+    console.log(reversePsychology("wash the dishes")); // "Do not wash the dishes."
+    console.log(reversePsychology("eat your lunch")); // "Do not eat your lunch."
+    console.log(reversePsychology("go to school")); // "Do not go to school."
+
+    // Custom test cases.
+    console.log(reversePsychology("")); // "Do not ."
+    console.log(reversePsychology()); // "Do not do anything."
 }
 
 // 17-09-2023
