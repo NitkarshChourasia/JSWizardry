@@ -47,3 +47,15 @@ _________
 */
 //Your code should go here:
 
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let [head, ...tail] = arr;
+
+if (require.main == module) {
+    console.log("####  ES6: Destructuring Arrays  ####");
+    console.log(head); // outputs:  1
+    console.log(tail); // outputs: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+}
+
+// 17-09-2023
+// complete.
