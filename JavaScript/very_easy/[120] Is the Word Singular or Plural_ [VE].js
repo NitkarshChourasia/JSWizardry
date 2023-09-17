@@ -70,6 +70,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 // Method 1: endsWith() method using function.
 function isPluralEndsWith(word) {
     return word.endsWith("s");
