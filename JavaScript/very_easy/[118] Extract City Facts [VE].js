@@ -60,7 +60,7 @@ _________
 //Your code should go here:
 
 function cityFacts(cityInfo) {
-  return `${cityInfo.name} has a population of ${cityInfo.population} and is situated in ${cityInfo.continent}`;
+  return `${cityInfo.name} has a population of ${cityInfo.population} and is situated in ${cityInfo.continent}.`;
 }
 
 
