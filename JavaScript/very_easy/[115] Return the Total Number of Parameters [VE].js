@@ -62,3 +62,18 @@ _________
 */
 //Your code should go here:
 
+function numberArgsArguLen() {
+    return arguments.length;
+}
+
+function numberArgsRestParam(...args) {
+    return args.length;
+}
+
+function numberArgs(...args) {
+    return [...args].length;
+}
+
+if (require.main == module) {
+    // Test cases.
+    console.log(numberArgs("a", "b", "c"));
