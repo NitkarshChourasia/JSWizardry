@@ -71,7 +71,7 @@ function cityFacts(cityInfo) {
 if (require.main == module) {
   console.log("####  Extract City Facts  ####\n")
   // Test cases.
-  console.log("Using dot notation.");
+  // console.log("Using dot notation.");
   console.log(cityFacts({
     name: "Paris",
     population: "2,140,526",
