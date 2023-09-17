@@ -72,8 +72,30 @@ function numberArgsRestParam(...args) {
 
 function numberArgs(...args) {
     return [...args].length;
-}
+} // Explain this to yourself.
 
 if (require.main == module) {
+    console.log("####  Return the Total Number of Parameters  ####\n")
     // Test cases.
+
+    console.log("Used Arguments.length\n");
+    console.log(numberArgsArguLen("a", "b", "c"));
+    console.log(numberArgsArguLen(10, 20, 30, 40, 50));
+    console.log(numberArgsArguLen("x", "y"));
+    console.log(numberArgsArguLen());
+
+    console.log("Used Rest Parameter\n");
+    console.log(numberArgsRestParam("a", "b", "c"));
+    console.log(numberArgsRestParam(10, 20, 30, 40, 50));
+    console.log(numberArgsRestParam("x", "y"));
+    console.log(numberArgsRestParam());
+
+    console.log("Used Spread Operator with Square bracket return\n");
     console.log(numberArgs("a", "b", "c"));
+    console.log(numberArgs(10, 20, 30, 40, 50));
+    console.log(numberArgs("x", "y"));
+    console.log(numberArgs());
+}
+
+// 17-09-2023
+// complete.
