@@ -56,3 +56,15 @@ _________
 */
 //Your code should go here:
 
+reversePsychology = (str = "do anything") => `Do not ${str}.`;
+
+if (require.main == module) {
+    console.log("####  Reverse Psychology  ####");
+    // Test cases.
+    console.log(reversePsychology("wash the dishes"));
+    console.log(reversePsychology("eat your lunch"));
+    console.log(reversePsychology("go to school"));
+}
+
+// 17-09-2023
+// complete.
