@@ -96,5 +96,6 @@ if (require.main == module) {
     console.log(match("mask", "mAskinG")); // false
 }
 
+
 // 18-09-2023
 // complete.
