@@ -76,3 +76,17 @@ _________
 */
 //Your code should go here:
 
+function checkSquareAndCube(arr) {
+    return Math.sqrt(arr[0]) === Math.cbrt(arr[1]);
+}
+
+if (require.main == module) {
+    console.log("####  Squares and Cubes Equality  ####");
+    // Test cases.
+    console.log(checkSquareAndCube([4, 8])); // true
+    console.log(checkSquareAndCube([16, 48])); // false
+    console.log(checkSquareAndCube([9, 27])); // true
+}
+
+// 18-09-2023
+// complete.
