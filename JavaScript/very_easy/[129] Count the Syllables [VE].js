@@ -60,3 +60,30 @@ _________
 */
 //Your code should go here:
 
+function countSyllablesRegEx(str) {
+    return str.match(/[aeiou]/gi).length;
+} // Learn regex.
+
+function countSyllablesLowerSplit(str) {
+    syllable = str.substring(1, 2).toLowerCase();
+    return str.toLowerCase().split(syllable).length - 1;
+}
+
+
+if (require.main == module) {
+    console.log("####  Count the Syllables  ####");
+    // Test cases.
+    console.log("Method 1: Using regex.");
+    console.log(countSyllablesRegEx("Hehehehehehe")); // 6
+    console.log(countSyllablesRegEx("bobobobobobobobo")); // 8
+    console.log(countSyllablesRegEx("NANANA")); // 3
+
+    console.log("Method 2: Using split.");
+    console.log(countSyllablesLowerSplit("Hehehehehehe")); // 6
+    console.log(countSyllablesLowerSplit("bobobobobobobobo")); // 8
+    console.log(countSyllablesLowerSplit("NANANA")); // 3
+}
+
+// 17-09-2023
+// To learn this.
+// Incomplete.
