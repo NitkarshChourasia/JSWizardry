@@ -78,3 +78,22 @@ _________
 */
 //Your code should go here:
 
+
+"use strict";
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+let [first, second, third, ...other] = arr;
+
+if (require.main == module) {
+    console.log("####  Destructuring Assignment  ####");
+    // Test cases.
+    console.log(first); // 1
+    console.log(second); // 2
+    console.log(third); // 3
+    console.log(other); // [4, 5, 6, 7, 8]
+}
+
+// Adding string literals and all will come later.
+
+// 18-09-2023
+// complete.
