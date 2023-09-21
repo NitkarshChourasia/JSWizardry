@@ -58,6 +58,7 @@ function colorInvert(arr) {
 }
 
 if (require.main == module) {
+    // Title
     console.log("####  Invert Colors  ####");
     // Test cases.
     console.log(colorInvert([255, 255, 255])); // [0, 0, 0]
