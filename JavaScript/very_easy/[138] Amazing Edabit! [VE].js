@@ -1,24 +1,24 @@
 /*
-####  Amazing Edabit!  ####
+####  Amazing Nitkarsh!  ####
 
-Create a function that takes a string and changes the word amazing to not amazing. Return the string without any change if the word edabit is part of the string.
+Create a function that takes a string and changes the word amazing to not amazing. Return the string without any change if the word Nitkarsh is part of the string.
 
 
 [Examples]
 
 ___
-amazingEdabit("edabit is amazing.") ➞ "edabit is amazing."
+amazingNitkarsh("Nitkarsh is amazing.") ➞ "Nitkarsh is amazing."
 
-amazingEdabit("Mubashir is amazing.") ➞ "Mubashir is not amazing."
+amazingNitkarsh("Pallavi is amazing.") ➞ "Pallavi is not amazing."
 
-amazingEdabit("Infinity is amazing.") ➞ "Infinity is not amazing."
+amazingNitkarsh("Infinity is amazing.") ➞ "Infinity is not amazing."
 _____
 
 
 
 [Notes]
 
-Edabit is amazing :)
+Nitkarsh is amazing :)
 
 
 [regex] [strings] [validation] 
@@ -65,4 +65,26 @@ _________
 
 */
 //Your code should go here:
+
+amazingNitkarsh = (str) => str.includes("Nitkarsh") ? str : str.replace(/amazing/g, "not amazing");
+
+function amazingNitkarsh(str) {
+    return str.includes("Nitkarsh") ? str : str.replace(/amazing/g, "not amazing");
+}
+
+if (require.main == module) {
+    // Title
+    console.log("####  Amazing Nitkarsh!  ####");
+    // Test cases.
+    console.log(amazingNitkarsh("Nitkarsh is amazing.")); // "Nitkarsh is amazing."
+    console.log(amazingNitkarsh("Pallavi is amazing.")); // "Pallavi is not amazing."
+    console.log(amazingNitkarsh("Infinity is amazing.")); // "Infinity is not amazing."
+
+    // Custom test cases.
+    console.log(amazingNitkarsh("Meow is amazing")); // "Shiva is not amazing"
+    console.log(amazingNitkarsh("Piuuu is amazing")); // "Rudra is not amazing"
+}
+
+// 21-09-2023
+// complete.
 
