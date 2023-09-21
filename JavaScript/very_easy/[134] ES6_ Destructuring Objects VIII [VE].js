@@ -71,5 +71,7 @@ if (require.main == module) {
     console.log(rest); // { city: "Mumbai", state: "Maharashtra", country: "India" } 
 }
 
+// Proper string literal formatting will be done, when refactoring.
+
 // 18-09-2023
 // complete.
