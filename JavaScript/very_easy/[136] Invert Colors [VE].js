@@ -8,8 +8,8 @@ Create a function that inverts the rgb values of a given tuple.
 
 ___
 colorInvert([255, 255, 255]) ➞ [0, 0, 0]
-// (255, 255, 255) is the color white.
-// The opposite is (0, 0, 0), which is black.
+//! (255, 255, 255) is the color white.
+//! The opposite is (0, 0, 0), which is black.
 
 colorInvert([0, 0, 0]) ➞ [255, 255, 255]
 
@@ -53,3 +53,17 @@ _________
 */
 //Your code should go here:
 
+function colorInvert(arr) {
+    return arr.map((color) => 255 - color);
+}
+
+if (require.main == module) {
+    console.log("####  Invert Colors  ####");
+    // Test cases.
+    console.log(colorInvert([255, 255, 255])); // [0, 0, 0]
+    console.log(colorInvert([0, 0, 0])); // [255, 255, 255]
+    console.log(colorInvert([165, 170, 221])); // [90, 85, 34]
+}
+
+// 21-09-2023
+// complete.
