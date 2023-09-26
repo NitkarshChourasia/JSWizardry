@@ -60,7 +60,8 @@ _________
 _________
 Bitwise
 https://www.w3schools.com/js/js_bitwise.asp
-JavaScript stores numbers as 64 bits floating point numbers, but all bitwise  operations are performed on 32 bits binary numbers.
+JavaScript stores numbers as 64 bits floating point numbers, but all bitwise 
+ operations are performed on 32 bits binary numbers.
 _________
 _________
 Bitwise Operators
@@ -96,3 +97,42 @@ _________
 */
 //Your code should go here:
 
+function bitwiseAND(n1, n2) {
+    return n1 & n2;
+}
+
+function bitwiseOR(n1, n2) {
+    return n1 | n2;
+}
+
+function bitwiseXOR(n1, n2) {
+    return n1 ^ n2;
+}
+
+bitwiseANDArrow = (n1, n2) => n1 & n2;
+bitwiseORArrow = (n1, n2) => n1 | n2;
+bitwiseXORArrow = (n1, n2) => n1 ^ n2;
+
+if (require.main == module) {
+    // Title.
+    console.log("#### Bitwise Operations ####");
+    // Test cases.
+
+    // Bitwise AND.
+    console.log("Bitwise AND:");
+    console.log(bitwiseAND(7, 12));
+    console.log(bitwiseANDArrow(7, 12));
+
+    // Bitwise OR.
+    console.log("Bitwise OR:");
+    console.log(bitwiseOR(7, 12));
+    console.log(bitwiseORArrow(7, 12));
+
+    // Bitwise XOR.
+    console.log("Bitwise XOR:");
+    console.log(bitwiseXOR(7, 12));
+    console.log(bitwiseXORArrow(7, 12));
+}
+
+// 26 September, 2023.
+// complete.
