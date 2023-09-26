@@ -73,3 +73,22 @@ _________
 */
 //Your code should go here:
 
+function matchHouses(step) {
+    formula = 6 * step - (step - 1);
+    return formula;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Matchstick Houses  ####");
+    // Test cases.
+
+    console.log(matchHouses(1)); // 6
+    console.log(matchHouses(4)); // 21
+    console.log(matchHouses(87)); // 436
+
+    // End of script.
+}
+
+// 26 September, 2023.
+// complete.
