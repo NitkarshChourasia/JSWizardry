@@ -94,7 +94,6 @@ if (require.main == module) {
     // Custom test cases.
     console.log(shiftToLeft(2, 10)); // 2048
 
-
     console.log("Recursion version:");
     console.log(shiftToLeftRecursion(5, 2)); // 20
     console.log(shiftToLeftRecursion(10, 3)); // 80
