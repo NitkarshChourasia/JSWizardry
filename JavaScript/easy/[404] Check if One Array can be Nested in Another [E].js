@@ -60,3 +60,25 @@ _________
 */
 //Your code should go here:
 
+function canNest(arr1, arr2) {
+    eq1 = Math.min(...arr1) > Math.min(...arr2);
+    eq2 = Math.max(...arr1) < Math.max(...arr2);
+    return eq1 && eq2;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("#### Check if One Array can be Nested in Another ####")
+
+    // Test cases.
+    console.log(canNest([1, 2, 3, 4], [0, 6])) // true
+    console.log(canNest([3, 1], [4, 0])) // true
+    console.log(canNest([9, 9, 8], [8, 9])) // false
+    console.log(canNest([1, 2, 3, 4], [2, 3])) // false
+
+    // End of script.
+}
+
+// 27 September, 2023.
+// complete.
+
