@@ -81,3 +81,75 @@ _________
 */
 //Your code should go here:
 
+
+"use strict";
+
+function minMaxMathWay(arr) {
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+    return [min, max];
+}
+
+function minMaxSortWay(arr) {
+    arr.sort((a, b) => a - b);
+    return [arr[0], arr[arr.length - 1]];
+}
+
+function minMaxShiftAndPopWay(arr) {
+    arr.sort((a, b) => a - b);
+    let min = arr.shift();
+    let max = arr.pop();
+    return [min, max];
+}
+
+function minMaxPushWay(arr) {
+    let min = arr[0];
+    let max = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    return [min, max];
+} // Good program.
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Find the Smallest and Biggest Numbers  ####");
+    // Test cases.
+
+    // Math.min() and Math.max() way.
+    console.log("Math.min() and Math.max() way."); // Math.min() and Math.max() way.
+    console.log(minMaxMathWay([1, 2, 3, 4, 5])); // [1, 5]
+    console.log(minMaxMathWay([2334454, 5])); // [5, 2334454]
+    console.log(minMaxMathWay([1])); // [1, 1]
+
+    // Array.prototype.sort() way.
+    console.log("Array.prototype.sort() way."); // Array.prototype.sort() way.
+    console.log(minMaxSortWay([1, 2, 3, 4, 5])); // [1, 5]
+    console.log(minMaxSortWay([2334454, 5])); // [5, 2334454]
+    console.log(minMaxSortWay([1])); // [1, 1]
+
+    // Array.prototype.shift() and Array.prototype.pop() way.
+    console.log("Array.prototype.shift() and Array.prototype.pop() way."); // Array.prototype.shift() and Array.prototype.pop() way.
+    console.log(minMaxShiftAndPopWay([1, 2, 3, 4, 5])); // [1, 5]
+    console.log(minMaxShiftAndPopWay([2334454, 5])); // [5, 2334454]
+    console.log(minMaxShiftAndPopWay([1])); // [1, 1]
+
+    // Array.prototype.push() way.
+    console.log("Array.prototype.push() way."); // Array.prototype.push() way.
+    console.log(minMaxPushWay([1, 2, 3, 4, 5])); // [1, 5]
+    console.log(minMaxPushWay([2334454, 5])); // [5, 2334454]
+    console.log(minMaxPushWay([1])); // [1, 1]
+
+    // End of script.
+}
+
+
+// 27 September, 2023
+// complete.
