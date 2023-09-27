@@ -80,3 +80,21 @@ _________
 */
 //Your code should go here:
 
+function timeForMilkAndCookies(date) {
+    return date.getMonth() === 11 && date.getDate() === 24;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Is it Time for Milk and Cookies?  ####");
+    // Test cases.
+
+    console.log(timeForMilkAndCookies(new Date(2013, 11, 24))); // true
+    console.log(timeForMilkAndCookies(new Date(2013, 0, 23))); // false
+    console.log(timeForMilkAndCookies(new Date(3000, 11, 24))); // true
+
+    // End of script.
+}
+
+// 27 September, 2023.
+// complete.
