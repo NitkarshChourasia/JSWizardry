@@ -71,3 +71,21 @@ _________
 */
 //Your code should go here:
 
+function binary(decimal) {
+    return decimal.toString(2);
+}
+
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Convert a Number to Base-2  ####");
+    // Test cases.
+    console.log(binary(1));
+    console.log(binary(5));
+    console.log(binary(10));
+
+    // End of script.
+}
+
+// 26 September, 2023.
+// complete.
