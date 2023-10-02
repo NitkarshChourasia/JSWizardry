@@ -10,7 +10,7 @@ ___
 kToK(4, 2) ➞ true
 
 kToK(387420489, 9) ➞ true
-// 9^9 == 387420489
+9^9 == 387420489
 
 kToK(3124, 5) ➞ false
 
@@ -24,7 +24,7 @@ _____
 The ^ operator refers to exponentiation operation, not the bitwise XOR operation.
 
 
-[bit_operations] [math] [numbers] [validation] 
+[bit_operations] [math] [numbers] [validation]
 
 
 
@@ -69,3 +69,18 @@ _________
 */
 //Your code should go here:
 
+function kToK(n, k) {
+    return Math.pow(k, k) === n;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Testing K^K == N?  ####");
+    // Test cases.
+    console.log(kToK(4, 2)); // true
+    console.log(kToK(387420489, 9)); // true
+    console.log(kToK(3124, 5)); // false
+    console.log(kToK(17, 3)); // false
+
+    // End of script.
+}
