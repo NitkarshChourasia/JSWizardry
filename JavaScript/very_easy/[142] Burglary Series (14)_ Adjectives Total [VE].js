@@ -83,3 +83,6 @@ if (require.main == module) {
     console.log(totalAmountAdjectives_directReturn({ a: "idiot", b: "idiot", c: "idiot" })); // 3
     console.log(totalAmountAdjectives_directReturn({ a: "moron", b: "scumbag", c: "moron", d: "dirtbag" })); // 4
 }
+
+// 2-October-2023
+// complete.
