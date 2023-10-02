@@ -57,3 +57,28 @@ _________
 */
 //Your code should go here:
 
+// Method 1: Using an object.
+function nSidedShape(n) {
+    shapes = { 1: "circle", 2: "semi-circle", 3: "triangle", 4: "square", 5: "pentagon", 6: "hexagon", 7: "heptagon", 8: "octagon", 9: "nonagon", 10: "decagon" };
+
+    return shapes[n];
+}
+
+// Method 2: Using an array.
+function nSidedShape(n) {
+    return ["circle", "semi-circle", "triangle", "square", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"][n - 1];
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Shapes With N Sides  ####");
+    // Test cases.
+    console.log(nSidedShape(3)); // "triangle"
+    console.log(nSidedShape(1)); // "circle"
+    console.log(nSidedShape(9)); // "nonagon"
+
+    // End of script.
+}
+
+// 2-October-2023
+// complete.

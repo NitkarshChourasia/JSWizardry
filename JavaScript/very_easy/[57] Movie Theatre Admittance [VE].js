@@ -50,7 +50,8 @@ _________
 _________
 Comparison and Logical Operators
 https://www.w3schools.com/js/js_comparisons.asp
-If the variable age is a value below 18, the value of the variable voteable  will be "Too young", otherwise the value of voteable will be "Old enough".
+If the variable age is a value below 18, the value of the variable voteable 
+ will be "Too young", otherwise the value of voteable will be "Old enough".
 _________
 _________
 Conditional (ternary) Operator
@@ -66,3 +67,18 @@ _________
 */
 //Your code should go here:
 
+function acceptIntoMovie(age, isSupervised) {
+    if (age >= 15 || isSupervised == true) {
+        return true;
+    }
+    return false;
+}
+
+if (require.main == module){
+    console.log(acceptIntoMovie(14, true));
+    console.log(acceptIntoMovie(14, false));
+    console.log(acceptIntoMovie(16, false));
+}
+
+// 05-09-2023
+// complete.

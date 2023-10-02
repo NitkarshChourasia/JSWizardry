@@ -56,3 +56,15 @@ _________
 */
 //Your code should go here:
 
+function makePair(num1, num2) {
+    return [num1, num2];
+}
+
+if (require.main == module) {
+    console.log(makePair(1, 2));
+    console.log(makePair(51, 21));
+    console.log(makePair(512124, 215));
+}
+
+
+// complete.

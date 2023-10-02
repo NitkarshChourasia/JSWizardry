@@ -74,3 +74,20 @@ _________
 */
 //Your code should go here:
 
+add2 = x => x + 2;
+add3 = x => x + 3;
+add5 = x => x + 5;
+add7 = x => x + 7;
+add11 = x => x + 11;
+
+
+if (require.main == module) {
+    console.log(add2(3));
+    console.log(add3(3));
+    console.log(add5(3));
+    console.log(add7(3));
+    console.log(add11(3));
+}
+
+// 05-09-2023
+// complete.

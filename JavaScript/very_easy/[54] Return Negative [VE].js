@@ -68,3 +68,38 @@ _________
 */
 //Your code should go here:
 
+
+function returnNegative(n) {
+    if (n < 0) {
+        return n;
+    }
+    else if (n === 0) {
+        return 0;
+    }
+    return -n;
+}
+
+function returnNegativeMethodType(n) {
+    if (n === 0) {
+        return 0;
+    }
+    return -Math.abs(n);
+}
+
+
+if (require.main == module) {
+    console.log(returnNegative(4));
+    console.log(returnNegative(15));
+    console.log(returnNegative(-4));
+    console.log(returnNegative(0));
+
+    console.log() // Black line for readibility.
+
+    console.log(returnNegativeMethodType(4));
+    console.log(returnNegativeMethodType(15));
+    console.log(returnNegativeMethodType(-4));
+    console.log(returnNegativeMethodType(0));
+}
+
+// 05-09-2023
+// complete.

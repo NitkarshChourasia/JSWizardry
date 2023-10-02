@@ -51,3 +51,15 @@ _________
 */
 //Your code should go here:
 
+function posCom(n) {
+    return Math.pow(2, n);
+}
+
+if (require.main == module) {
+    console.log(posCom(1));
+    console.log(posCom(3));
+    console.log(posCom(10));
+}
+
+// 06/09/2023
+// complete.

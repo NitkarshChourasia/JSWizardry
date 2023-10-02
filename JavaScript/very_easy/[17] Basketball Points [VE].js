@@ -41,3 +41,15 @@ _________
 */
 //Your code should go here:
 
+function points(input_2pointers, input_3pointers) {
+    return input_2pointers * 2 + input_3pointers * 3
+}
+
+if (require.main == module) {
+    console.log(points(1, 1))
+    console.log(points(7, 5))
+    console.log(points(38, 8))
+}
+
+
+// complete.

@@ -1,6 +1,5 @@
 /*
 ####  Check if an Integer is Divisible By Five  ####
-
 Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
 
 
@@ -45,7 +44,8 @@ _________
 _________
 JavaScript Comparison and Logical Operators
 https://www.w3schools.com/js/js_comparisons.asp
-If the variable age is a value below 18, the value of the variable voteable  will be "Too young", otherwise the value of voteable will be "Old enough".
+If the variable age is a value below 18, the value of the variable voteable 
+ will be "Too young", otherwise the value of voteable will be "Old enough".
 _________
 _________
 JavaScript Algorithm: Can We Divide It?
@@ -71,3 +71,17 @@ _________
 */
 //Your code should go here:
 
+
+function DivisibleByFive(number) {
+    return number % 5 === 0;
+}
+
+if (require.main == module) {
+    console.log(DivisibleByFive(5));
+    console.log(DivisibleByFive(-55));
+    console.log(DivisibleByFive(37));
+}
+
+
+// 04 - 09 - 2023
+// complete.

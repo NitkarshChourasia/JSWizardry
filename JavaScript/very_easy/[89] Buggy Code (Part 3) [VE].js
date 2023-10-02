@@ -60,3 +60,18 @@ _________
 */
 //Your code should go here:
 
+
+function sumArray(arr) {
+    return sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(sumArray([1, 2, 3, 4, 5]));
+    console.log(sumArray([-1, 0, 1]));
+    console.log(sumArray([0, 4, 8, 12]));
+}
+
+// 08-09-2023
+// complete.

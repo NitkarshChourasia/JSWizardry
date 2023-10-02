@@ -62,3 +62,27 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+// let f = () => 5; // Making a random function out of it.
+
+let f = (min = 0, max = 100) => Math.random() * (min - max) + min;
+let g = (min = 0, max = 100) => Math.random() * (min - max) + min; // Later, would add the functionality of upto range.
+
+
+
+let whichIsLarger = (f, g, min = 0, max = 100) => f(min, max) > g(min, max) ? "f" : g(min, max) > f(min, max) ? "g" : "neither";
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Which Function Returns the Larger Number?  ####");
+    // Test cases.
+    console.log(whichIsLarger(f, g));
+    console.log(whichIsLarger(f, g));
+    console.log(whichIsLarger(f, g));
+
+    // End of script.
+}
+
+// 27 September, 2023.
+// complete.

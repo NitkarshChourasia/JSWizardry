@@ -7,11 +7,11 @@ Create a function that takes in a current mood and return a sentence in the foll
 [Examples]
 
 ___
-moodToday("happy") ➞ "Today, I am feeling happy"
+moodToday("happy") ➞ "Today, I am feeling happy."
 
-moodToday("sad") ➞ "Today, I am feeling sad"
+moodToday("sad") ➞ "Today, I am feeling sad."
 
-moodToday() ➞ "Today, I am feeling neutral"
+moodToday() ➞ "Today, I am feeling neutral."
 _____
 
 
@@ -56,3 +56,21 @@ _________
 */
 //Your code should go here:
 
+function moodToday(mood = "neutral") {
+    return `Today, I am feeling ${mood}.`;
+}
+
+if (require.main == module) {
+    console.log("####  Default Mood  ####");
+    // Test cases.
+    console.log(moodToday("happy")); // "Today, I am feeling happy"
+    console.log(moodToday("sad")); // "Today, I am feeling sad"
+    console.log(moodToday()); // "Today, I am feeling neutral"
+
+    // Custom test cases.
+    console.log(moodToday("angry")); // "Today, I am feeling angry."
+    console.log(moodToday("excited")); // "Today, I am feeling excited."
+}
+
+// 17-09-2023
+// complete.

@@ -33,7 +33,7 @@ ___
 
 
 
-[arrays] [formatting] [numbers] [strings] 
+[arrays] [formatting] [numbers] [strings]
 
 
 
@@ -78,3 +78,5 @@ _________
 */
 //Your code should go here:
 
+
+// This I would like to solve. By myself.

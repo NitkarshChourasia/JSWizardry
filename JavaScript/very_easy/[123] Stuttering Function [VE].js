@@ -61,3 +61,24 @@ _________
 */
 //Your code should go here:
 
+function stutter(word) {
+    return `${word.substr(0, 2)}... ${word.substr(0, 2)}... ${word}?`
+}
+
+// function stutter(word) {
+// return `(${word.substr(0, 2)}... )$.{repeat)`
+// }
+// Try to attempt what you were trying to do so.
+
+if (require.main == module) {
+    console.log("####  Stuttering Function  ####");
+    // Test cases.
+
+    console.log(stutter("incredible")); // "in... in... incredible?"
+    console.log(stutter("enthusiastic")); // "en... en... enthusiastic?"
+    console.log(stutter("outstanding")); // "ou... ou... outstanding?"
+
+}
+
+// 17-09-2023
+// complete.

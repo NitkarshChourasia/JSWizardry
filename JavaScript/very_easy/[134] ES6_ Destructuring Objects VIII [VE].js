@@ -3,17 +3,17 @@
 
 Using basic object destructuring you can assign variables name and email:
 ___
-let { name, email } = { name: "John", email: "john@example.com" }
+let { name, email } = { name: "Nitkarsh", email: "playnitkarsh@gmail.com" }
 
-console.log(name)  // "John"
-console.log(email)  // "john@example.com"
+console.log(name) // "Nitkarsh"
+console.log(email) // "playnitkarsh@gmailcom"
 _____
 
 What if there were more properties but you didn't want to write variables for all of them and just wanted to stick them into another object and do something like this:
 ___
-let { name, email, rest} = { name: "John", email: "john@example.com", city: "Phoenix", state: "AZ", country: "USA"}
+let { name, email, rest } = { name: "Nitkarsh", email: "playnitkarsh@gmail.com", city: "Mumbai", state: "Maharashtra", country: "India" }
 
-rest ===  { city: "Phoenix", state: "AZ", country: "USA"} // true
+rest === { city: "Mumbai", state: "Maharashtra", country: "India"} // true
 _____
 
 There is something you have to do with the variable name rest in order to assign it an object containing the rest of the object properties. You can find out how in the MDN docs in the Resources tab.
@@ -55,3 +55,23 @@ _________
 */
 //Your code should go here:
 
+
+
+
+
+
+let { name, email, ...rest } = { name: "Nitkarsh", email: "playnitkarsh@gmail.com", city: "Mumbai", state: "Maharashtra", country: "India" }
+
+if (require.main == module) {
+    console.log("####  Destructuring Objects  ####");
+    // Test cases.
+
+    console.log(name); // "Nitkarsh"
+    console.log(email); // "playnitkarsh@gmail.com"
+    console.log(rest); // { city: "Mumbai", state: "Maharashtra", country: "India" } 
+}
+
+// TODO: Proper string literal formatting will be done, when refactoring.
+
+// 18-09-2023
+// complete.

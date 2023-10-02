@@ -46,3 +46,22 @@ _________
 */
 //Your code should go here:
 
+
+function imposterFormula(imposter, player) {
+    if imposter => 3 && player => 10 {
+        return `${Math.round(100 * (imposter / player))}%`;
+    }
+    else {
+        return "The player limit is 10 and the imposter count can only go up to 3 only."
+    }
+}
+
+
+if (require.main == module) {
+    console.log(imposterFormula(1, 10));
+    console.log(imposterFormula(2, 5));
+    console.log(imposterFormula(1, 8));
+}
+
+// 06-09-2023
+// complete.

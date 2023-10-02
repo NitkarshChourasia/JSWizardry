@@ -57,3 +57,17 @@ _________
 */
 //Your code should go here:
 
+function howManyStickers(n) {
+    return 6 * Math.pow(n, 2);
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(howManyStickers(1));
+    console.log(howManyStickers(2));
+    console.log(howManyStickers(3));
+}
+
+// 08-09-2023
+// complete.

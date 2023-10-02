@@ -73,3 +73,22 @@ _________
 */
 //Your code should go here:
 
+function rectangleArea(width, height) {
+    if (width <= 0 || height <= 0) {
+        return -1
+    } else {
+        return width * height
+    }
+}
+
+if (require.main == module) {
+
+    console.log(rectangleArea(3, 4));
+    console.log(rectangleArea(10, 11));
+    console.log(rectangleArea(-1, 5));
+    console.log(rectangleArea(0, 2));
+}
+
+
+// 04-09-2023
+// complete.

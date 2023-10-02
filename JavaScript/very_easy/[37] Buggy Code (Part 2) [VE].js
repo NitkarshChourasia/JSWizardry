@@ -50,3 +50,32 @@ _________
 */
 //Your code should go here:
 
+
+function maxNumTertiary(num1, num2) {
+    return num1 > num2 ? num1 : num2;
+}
+
+function maxNumIfElse(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    }
+    else if (num2 > num1) {
+        return num2;
+    }
+    else {
+        return "The numbers are equal";
+    }
+}
+
+function maxNumMethodUse(num1, num2) {
+    return Math.max(num1, num2);
+}
+
+if (require.main == module) {
+    console.log(maxNumTertiary(3, 7));
+    console.log(maxNumIfElse(-1, 0));
+    console.log(maxNumMethodUse(1000, 400));
+}
+
+
+// complete.

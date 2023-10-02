@@ -64,3 +64,15 @@ _________
 */
 //Your code should go here:
 
+function and(bool1, bool2){
+    return bool1 && bool2;
+}
+
+if (require.main == module){
+    console.log(and(true, false));
+    console.log(and(true, true));
+    console.log(and(false, true));
+    console.log(and(false, false));
+}
+
+// complete.

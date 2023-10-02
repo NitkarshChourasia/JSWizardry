@@ -10,16 +10,16 @@ A star number is a centered figurate number that represents a centered hexagram 
 
 ___
 starNumber(2) ➞ 13
-// n = 2
-// 2nd star number = 13
+n = 2
+2nd star number = 13
 
 starNumber(3) ➞ 37
-// n = 3
-// 3rd star number = 37
+n = 3
+3rd star number = 37
 
 starNumber(5) ➞ 121
-// n = 5
-// 5th star number = 121
+n = 5
+5th star number = 121
 _____
 
 
@@ -54,3 +54,18 @@ _________
 */
 //Your code should go here:
 
+function starNumber(n) {
+    return 6 * n * (n - 1) + 1;
+}
+
+if (require.main == module) {
+    console.log("####  Nth Star Number  ####")
+
+    // Test cases.
+    console.log(starNumber(2));
+    console.log(starNumber(3));
+    console.log(starNumber(5));
+}
+
+// 12-09-2023
+// complete.

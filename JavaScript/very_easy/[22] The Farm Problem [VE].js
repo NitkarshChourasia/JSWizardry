@@ -68,3 +68,15 @@ _________
 */
 //Your code should go here:
 
+
+function animals(chickens, cows, pigs) {
+    return chickens * 2 + (cows + pigs) * 4
+}
+
+if (require.main == module) {
+    console.log(animals(2, 3, 5))
+    console.log(animals(1, 2, 3))
+    console.log(animals(5, 2, 8))
+}
+
+// complete.

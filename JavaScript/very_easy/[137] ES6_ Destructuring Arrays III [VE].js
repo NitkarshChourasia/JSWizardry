@@ -45,3 +45,30 @@ _________
 */
 //Your code should go here:
 
+
+const arr = ["eyes", "nose", "lips", "ears"]
+let [eyes, nose, lips, ears] = arr
+
+const arrLang = ["Javascript", "Java", "C++", "C#", "Python"]
+
+// But you can also skip over items in the array being destructured.
+let [js, , , , py] = arrLang
+
+if (require.main == module) {
+    // Title
+    console.log("####  ES6: Destructuring Arrays  ####");
+    // Test cases.
+    console.log(eyes); // "eyes"
+    console.log(nose); // "nose"
+    console.log(lips); // "lips"
+    console.log(ears); // "ears"
+
+    // Custom function test cases.
+
+    console.log(js); // "Javascript"
+    console.log(py); // "Python"
+
+}
+
+// 21-09-2023
+// complete.

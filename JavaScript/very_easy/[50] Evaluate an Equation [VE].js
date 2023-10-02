@@ -55,7 +55,8 @@ _________
 _________
 eval() Function
 https://www.w3schools.com/jsref/jsref_eval.asp
-If the argument is an expression, eval() evaluates the expression. If the  argument is one or more JavaScript statements, eval() executes the statements.
+If the argument is an expression, eval() evaluates the expression. If the 
+ argument is one or more JavaScript statements, eval() executes the statements.
 _________
 _________
 eval() vs. Function() in JavaScript
@@ -65,4 +66,15 @@ _________
 
 */
 //Your code should go here:
+
+eq = input_equation => eval(input_equation);
+
+if (require.main == module) {
+    console.log(eq("1+2"));
+    console.log(eq("6/(9-7)"));
+    console.log(eq("3+2-4"));
+}
+
+// 04-09-2023
+// complete.
 

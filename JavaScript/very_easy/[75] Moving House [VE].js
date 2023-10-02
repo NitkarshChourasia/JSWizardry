@@ -56,3 +56,16 @@ _________
 */
 //Your code should go here:
 
+function yearsInOneHouse(age, moves) {
+    return Math.round(age / (moves + 1));
+}
+
+
+if (require.main == module) {
+    console.log(yearsInOneHouse(30, 1));
+    console.log(yearsInOneHouse(15, 2));
+    console.log(yearsInOneHouse(80, 0));
+}
+
+// 06-09-2023
+// complete.

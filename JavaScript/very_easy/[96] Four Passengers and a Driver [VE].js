@@ -46,3 +46,26 @@ _________
 */
 //Your code should go here:
 
+function carsNeeded(nPeople) {
+    return Math.ceil(nPeople / 5);
+}
+
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(carsNeeded(5));
+    console.log(carsNeeded(11));
+    console.log(carsNeeded(0));
+
+    console.log(); // Blank line for readability.
+
+    // My test cases.
+
+    console.log(carsNeeded(3)); // 1
+    console.log(carsNeeded(13)); // 3
+    console.log(carsNeeded(1)); // 1
+}
+
+// 08-09-2023
+// complete.

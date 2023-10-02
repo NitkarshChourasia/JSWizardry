@@ -1,7 +1,7 @@
 /*
 ####  Buggy Code (Part 4)  ####
 
-Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
+Emmy has written a function that returns a greeting to users. However, she's in love with Nitkarsh, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
 Can you help her?
 
 
@@ -12,7 +12,7 @@ greeting("Matt") ➞ "Hello, Matt!"
 
 greeting("Helen") ➞ "Hello, Helen!"
 
-greeting("Mubashir") ➞ "Hello, my Love!"
+greeting("Nitkarsh") ➞ "Hello, my Love!"
 _____
 
 
@@ -26,7 +26,7 @@ ___
 
 
 
-[bugs] [conditions] [strings] 
+[bugs] [conditions] [strings]
 
 
 
@@ -61,3 +61,17 @@ _________
 */
 //Your code should go here:
 
+function greeting(name) {
+    return name === "Nitkarsh" ? "Hello, my Love!" : `Hello, ${name}!`;
+}
+
+
+if (require.main == module) {
+
+    console.log(greeting("Matt"));
+    console.log(greeting("Helen"));
+    console.log(greeting("Nitkarsh"));
+}
+
+
+// complete.

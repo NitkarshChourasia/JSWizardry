@@ -47,3 +47,18 @@ _________
 */
 //Your code should go here:
 
+function fiftyThirtyTwenty(income) {
+    return { Needs: income * 0.5, Wants: income * 0.3, Savings: income * 0.2 };
+}
+
+
+if (require.main == module) {
+    // Test cases.
+    console.log(fiftyThirtyTwenty(10000));
+    console.log(fiftyThirtyTwenty(50000));
+    console.log(fiftyThirtyTwenty(13450));
+}
+
+
+// 10-09-2023
+// complete.

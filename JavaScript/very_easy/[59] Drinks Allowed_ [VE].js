@@ -51,3 +51,15 @@ _________
 */
 //Your code should go here:
 
+function shouldServeDrinks(age, onBreak) {
+    if (age >= 18 && onBreak === false) {
+        return true;
+    }
+    return false;
+}
+
+if (require.main == module) {
+    console.log(shouldServeDrinks(17, true));
+    console.log(shouldServeDrinks(19, false));
+    console.log(shouldServeDrinks(30, true));
+}

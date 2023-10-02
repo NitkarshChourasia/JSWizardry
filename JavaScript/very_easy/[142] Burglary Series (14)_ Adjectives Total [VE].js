@@ -51,3 +51,38 @@ _________
 */
 //Your code should go here:
 
+
+"use strict";
+
+
+// Method 1 : Using Object.values() and Array.prototype.length.
+function totalAmountAdjectives(obj) {
+    let arr = Object.values(obj);
+    return arr.length;
+}
+
+
+// Method 2 : Directly returned Object.keys() and Array.prototype.length.
+function totalAmountAdjectives_directReturn(obj) {
+    return Object.keys(obj).length;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("#### Burglary Series : Adjectives Total ####");
+    // Test cases.
+    // Method 1 : Using Object.values() and Array.prototype.length.
+    console.log("Method 1 : Using Object.values() and Array.prototype.length.")
+    console.log(totalAmountAdjectives({ a: "moron" })); // 1
+    console.log(totalAmountAdjectives({ a: "idiot", b: "idiot", c: "idiot" })); // 3
+    console.log(totalAmountAdjectives({ a: "moron", b: "scumbag", c: "moron", d: "dirtbag" })); // 4
+
+    // Method 2 : Directly returned Object.keys() and Array.prototype.length.
+    console.log("Method 2 : Directly returned Object.keys() and Array.prototype.length.")
+    console.log(totalAmountAdjectives_directReturn({ a: "moron" })); // 1
+    console.log(totalAmountAdjectives_directReturn({ a: "idiot", b: "idiot", c: "idiot" })); // 3
+    console.log(totalAmountAdjectives_directReturn({ a: "moron", b: "scumbag", c: "moron", d: "dirtbag" })); // 4
+}
+
+// 2-October-2023
+// complete.

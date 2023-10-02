@@ -66,3 +66,25 @@ _________
 */
 //Your code should go here:
 
+function greaterThanOne(fracInStr) {
+    arrNums = fracInStr.split("/");
+
+    let [num1, num2] = arrNums;
+
+    if (num1 / num2 > 1) {
+        return true;
+    }
+    return false;
+}
+
+
+if (require.main == module) {
+    console.log("####  Fraction Greater Than One  ####");
+    // Test cases.
+    console.log(greaterThanOne("1/2")); // false
+    console.log(greaterThanOne("7/4")); // true
+    console.log(greaterThanOne("10/10")); // false
+}
+
+// 17-09-2023
+// complete.

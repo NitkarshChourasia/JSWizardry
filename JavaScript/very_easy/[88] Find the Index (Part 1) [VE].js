@@ -51,3 +51,20 @@ _________
 */
 //Your code should go here:
 
+function search(arr, item) {
+    if (arr.includes(item)) {
+        return arr.indexOf(item);
+    }
+    return -1
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(search([1, 5, 3], 5));
+    console.log(search([9, 8, 3], 3));
+    console.log(search([1, 2, 3], 4));
+}
+
+// 08-09-2023
+// complete.

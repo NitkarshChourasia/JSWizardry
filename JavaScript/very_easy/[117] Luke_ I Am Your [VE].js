@@ -62,3 +62,32 @@ _________
 */
 //Your code should go here:
 
+
+"use strict";
+
+function relationToLuke(name) {
+    // Also add feature like case independencies.
+    let family = {
+        "Darth Vader": "father",
+        "Leia": "sister",
+        "Han": "brother in law",
+        "R2D2": "droid"
+    };
+
+    return `Luke, I am your ${family[name]}.`;
+}
+
+if (require.main == module) {
+    console.log("####  Luke, I Am Your ...  ####\n")
+    // Test cases.
+    console.log(relationToLuke("Darth Vader"));
+    console.log(relationToLuke("Leia"));
+    console.log(relationToLuke("Han"));
+
+    // Custom test cases.
+    console.log(relationToLuke("R2D2"));
+}
+
+
+// 17-09-2023
+// complete.

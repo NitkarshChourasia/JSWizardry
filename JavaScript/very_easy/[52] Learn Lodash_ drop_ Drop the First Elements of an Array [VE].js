@@ -68,3 +68,18 @@ _________
 */
 //Your code should go here:
 
+
+function drop(arr, n) {
+    return arr.slice(n);
+}
+
+
+if (require.main == module) {
+    console.log(drop([1, 2, 3], 1));
+    console.log(drop([1, 2, 3], 2));
+    console.log(drop([1, 2, 3], 5));
+    console.log(drop([1, 2, 3], 0));
+}
+
+// 05-09-2023
+// complete.

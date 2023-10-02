@@ -63,3 +63,17 @@ _________
 */
 //Your code should go here:
 
+numParity = (num) => num % 2 ? "odd" : "even";
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(numParity(3)); // odd.
+    console.log(numParity(146)); // even.
+    console.log(numParity(19)); // odd.
+    console.log(numParity(0)); // even.
+
+}
+
+// 08-09-2023
+// complete.

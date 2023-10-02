@@ -14,6 +14,8 @@ isLastCharacterN("Piet") ➞ false
 isLastCharacterN("Bert") ➞ false
 
 isLastCharacterN("Dean") ➞ true
+
+isLastCharacterN("Nitkarsh") ➞ false
 _____
 
 
@@ -67,4 +69,48 @@ _________
 
 */
 //Your code should go here:
+
+function isLastCharacterN(name) {
+    return name.endsWith("n");
+}
+
+function isLastCharacterNCharAtMet(name) {
+    return name.charAt(name.length - 1) === "n";
+}
+
+function isLastCharacterNSliceMet(name) {
+    return name[name.length - 1] === "n";
+}
+
+if (require.main == module) {
+
+    // Test cases.
+    console.log(isLastCharacterN("Aiden"));
+    console.log(isLastCharacterN("Piet"));
+    console.log(isLastCharacterN("Bert"));
+    console.log(isLastCharacterN("Dean"));
+    console.log(isLastCharacterN("Nitkarsh"));
+
+    console.log(); // Blank line for readability.
+
+    console.log(isLastCharacterNCharAtMet("Aiden"));
+    console.log(isLastCharacterNCharAtMet("Piet"));
+    console.log(isLastCharacterNCharAtMet("Bert"));
+    console.log(isLastCharacterNCharAtMet("Dean"));
+    console.log(isLastCharacterNCharAtMet("Nitkarsh"));
+
+    console.log(); // Blank line for readability.
+
+    console.log(isLastCharacterNSliceMet("Aiden"));
+    console.log(isLastCharacterNSliceMet("Piet"));
+    console.log(isLastCharacterNSliceMet("Bert"));
+    console.log(isLastCharacterNSliceMet("Dean"));
+    console.log(isLastCharacterNSliceMet("Nitkarsh"));
+
+}
+
+
+// 10-09-2023
+// complete.
+
 

@@ -46,7 +46,8 @@ _________
 _________
 Comparison and Logical Operators
 https://www.w3schools.com/js/js_comparisons.asp
-If the variable age is a value below 18, the value of the variable voteable  will be "Too young", otherwise the value of voteable will be "Old enough".
+If the variable age is a value below 18, the value of the variable voteable 
+ will be "Too young", otherwise the value of voteable will be "Old enough".
 _________
 _________
 Arrow Functions
@@ -72,3 +73,36 @@ _________
 */
 //Your code should go here:
 
+function isEmpty1(str) {
+    return !str;
+}
+
+function isEmpty2(str) {
+    return str === "";
+}
+
+function isEmptyMyWay(str) {
+    return str.length === 0;
+}
+
+if (require.main == module) {
+    console.log(isEmpty1(""));
+    console.log(isEmpty1(" "));
+    console.log(isEmpty1("a"));
+
+    console.log();
+
+    console.log(isEmpty2(""));
+    console.log(isEmpty2(" "));
+    console.log(isEmpty2("a"));
+
+    console.log();
+
+    console.log(isEmptyMyWay(""));
+    console.log(isEmptyMyWay(" "));
+    console.log(isEmptyMyWay("a"));
+}
+
+
+// 4 - 9 - 2023
+// complete.

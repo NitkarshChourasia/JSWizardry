@@ -62,3 +62,21 @@ _________
 */
 //Your code should go here:
 
+function absolute(num) {
+    return num < 0 ? -num : num;
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(absolute(-1.217197940));
+    console.log(absolute(-12.1320));
+    console.log(absolute(-544.0));
+    console.log(absolute(4666));
+    console.log(absolute(-3.14));
+    console.log(absolute(250));
+}
+
+
+// 08-09-2023
+// complete.

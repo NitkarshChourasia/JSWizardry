@@ -61,3 +61,16 @@ _________
 */
 //Your code should go here:
 
+
+function getVoteCount(votes) {
+    return votes.upvotes - votes.downvotes;
+}
+
+if (require.main == module){
+    console.log(getVoteCount({ upvotes: 13, downvotes: 0 }));
+    console.log(getVoteCount({ upvotes: 2, downvotes: 33 }));
+    console.log(getVoteCount({ upvotes: 132, downvotes: 132 }));
+}
+
+// 05-09-2023
+// complete.

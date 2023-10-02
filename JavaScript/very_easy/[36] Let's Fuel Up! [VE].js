@@ -51,3 +51,16 @@ _________
 */
 //Your code should go here:
 
+
+function calculateFuel(distance) {
+    return distance * 10 < 100 ? 100 : distance * 10;
+}
+
+if (require.main == module) {
+    console.log(calculateFuel(15));
+    console.log(calculateFuel(23.5));
+    console.log(calculateFuel(3));
+}
+
+
+// complete.

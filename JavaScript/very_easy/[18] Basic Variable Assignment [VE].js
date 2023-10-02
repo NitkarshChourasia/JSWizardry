@@ -1,17 +1,17 @@
 /*
 ####  Basic Variable Assignment  ####
 
-A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Edabit" and store it in a variable called result. He needs your help to fix this code.
+A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Nitkarsh" and store it in a variable called result. He needs your help to fix this code.
 
 
 [Examples]
 
 ___
-nameString("Mubashir") ➞ "MubashirEdabit"
+nameString("Nitkarsh") ➞ "NitkarshNitkarsh"
 
-nameString("Matt") ➞ "MattEdabit"
+nameString("Matt") ➞ "MattNitkarsh"
 
-nameString("javaScript") ➞ "javaScriptEdabit"
+nameString("javaScript") ➞ "javaScriptNitkarsh"
 _____
 
 
@@ -61,3 +61,15 @@ _________
 */
 //Your code should go here:
 
+function nameString(input_name){
+    result = input_name + "Nitkarsh"
+    return result
+}
+
+if(require.main == module){
+    console.log(nameString("Nitkarsh"))
+    console.log(nameString("Matt"))
+    console.log(nameString("javaScript"))
+}
+
+// complete.

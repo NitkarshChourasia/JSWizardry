@@ -60,3 +60,22 @@ _________
 */
 //Your code should go here:
 
+function sumPolygon(input_value){
+    
+    // n = number of sides
+    var n = input_value
+    
+    if (n < 3){
+        return "Invalid input."
+    }
+    return (n - 2) * 180
+}
+
+if (require.main == module){
+    console.log(sumPolygon(3))
+    console.log(sumPolygon(4))
+    console.log(sumPolygon(6))
+}
+
+
+// complete.

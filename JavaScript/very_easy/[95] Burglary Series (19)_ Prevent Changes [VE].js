@@ -11,7 +11,7 @@ ___
 const obj = { noChanges: true }
 
 preventChanges(obj) {
-  // Write your code here, don't use a return statement
+  Write your code here, don't use a return statement
 
   obj.noChanges = false;
   obj.signature = "whatever"
@@ -51,3 +51,27 @@ _________
 */
 //Your code should go here:
 
+
+
+const obj = { noChanges: true }
+
+function preventChanges(obj) {
+
+  // Write your code here, don't use a return statement
+  Object.freeze(obj);
+
+  // Pre-written code, here.
+  obj.noChanges = false;
+  obj.signature = "whatever"
+  return obj;
+
+}  // ➞ { noChanges: true }
+
+
+if (require.main == module) {
+  // Executing the function here.
+  console.log(preventChanges(obj));
+}
+
+// 08-09-2023
+// complete.

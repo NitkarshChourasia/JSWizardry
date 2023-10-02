@@ -46,3 +46,33 @@ _________
 */
 //Your code should go here:
 
+function areaShapeTernary(base, height, shape) {
+    return shape === "triangle" ? 0.5 * base * height : base * height;
+}
+
+function areaShape(base, height, shape) {
+    triAreaFormula = 0.5 * base * height;
+    parralelogramAreaFormula = base * height;
+    ifShape = { triangle: triAreaFormula, parallelogram: parralelogramAreaFormula };
+
+
+
+    // I want to add something like, 
+    // If shape in ifShape.keys(): then return ifShape[shape]
+    // else return no valid shape input.
+    // Something like this I wanted to input.
+
+
+    return ifShape[shape];
+}
+
+if (require.main == module) {
+    // Test cases.
+
+    console.log(areaShapeTernary(2, 3, "triangle"));
+    console.log(areaShapeTernary(8, 6, "parallelogram"));
+    console.log(areaShapeTernary(2.9, 1.3, "parallelogram"));
+}
+
+// 08-09-2023
+// complete.

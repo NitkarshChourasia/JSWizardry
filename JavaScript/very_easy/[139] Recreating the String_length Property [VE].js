@@ -56,3 +56,31 @@ _________
 */
 //Your code should go here:
 
+length = (str) => [...str].map((x) => x).lastIndexOf(str[str.length - 1]) + 1;
+
+// function length(str) {
+//     return [...str].map((x) => x).lastIndexOf(str[str.length - 1]) + 1;
+// }
+
+// function length(str) {
+//     return [...str].map((x) => x).lastIndexOf(str[str.length - 1]) + 1;
+// }
+
+// function length(str) {
+//     return [...str].map((x) => x).lastIndexOf(str[str.length - 1]) + 1;
+// }
+
+// Delete repetition.
+
+if (require.main == module) {
+    // Title
+    console.log("####  Recreating the String.length Property  ####");
+    // Test cases.
+    console.log(length("Hello World")); // 11
+    console.log(length("Edabit")); // 6
+    console.log(length("wash your hands!")); // 16
+}
+
+
+// 21-09-2023
+// incomplete.

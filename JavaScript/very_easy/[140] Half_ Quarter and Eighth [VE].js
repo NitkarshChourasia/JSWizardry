@@ -51,3 +51,47 @@ _________
 */
 //Your code should go here:
 
+// Method 1: Using push() method in arr.
+function halfQuarterEighthPushArr(num) {
+    let arr = [];
+    arr.push(num / 2);
+    arr.push(num / 4);
+    arr.push(num / 8);
+    return arr;
+}
+
+// Method 2: Using function and sq brackets.
+function halfQuarterEighthFunc(num) {
+    return [(num / 2), (num / 4), (num / 8)];
+}
+
+// Method 3: Using arrow function.
+halfQuarterEighthArrowFunc = (num) => [(num / 2), (num / 4), (num / 8)];
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Half, Quarter and Eighth  ####");
+    // Test cases.
+
+    // Method 1: Using push() method in arr.
+    console.log("Method 1: Using push() method in arr.");
+    console.log(halfQuarterEighthPushArr(6)); // [ 3, 1.5, 0.75 ]
+    console.log(halfQuarterEighthPushArr(22)); // [ 11, 5.5, 2.75 ]
+    console.log(halfQuarterEighthPushArr(25)); // [ 12.5, 6.25, 3.125 ]
+
+    // Method 2: Using function and sq brackets.
+    console.log("Method 2: Using function and sq brackets.");
+    console.log(halfQuarterEighthFunc(6)); // [ 3, 1.5, 0.75 ]
+    console.log(halfQuarterEighthFunc(22)); // [ 11, 5.5, 2.75 ]
+    console.log(halfQuarterEighthFunc(25)); // [ 12.5, 6.25, 3.125 ]
+
+
+    // Method 3: Using arrow function.
+    console.log("Method 3: Using arrow function.");
+    console.log(halfQuarterEighthArrowFunc(6)); // [ 3, 1.5, 0.75 ]
+    console.log(halfQuarterEighthArrowFunc(22)); // [ 11, 5.5, 2.75 ]
+    console.log(halfQuarterEighthArrowFunc(25)); // [ 12.5, 6.25, 3.125 ]
+}
+
+// 21-09-2023
+// complete.

@@ -10,7 +10,7 @@ Make a regexp to find time in the string: Breakfast at 09:00 in the room 123:456
 The solution is in the Resources tab.
 
 
-[regex] 
+[regex]
 
 
 
@@ -45,3 +45,5 @@ _________
 */
 //Your code should go here:
 
+// This will be solved, after I become just decent enough in RegEx.
+// Thank you.

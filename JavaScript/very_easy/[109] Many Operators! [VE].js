@@ -8,13 +8,13 @@ Some basic arithmetic operators are +, -, *, /, and %. In this challenge you wil
 
 ___
 operate(1, 2, "+") ➞ 3
-// 1 + 2 = 3
+1 + 2 = 3
 
 operate(7, 10, "-") ➞ -3
-// 7 - 10 = -3
+7 - 10 = -3
 
 operate(20, 10, "%") ➞ 0
-// 20 % 10 = 0
+20 % 10 = 0
 _____
 
 
@@ -24,7 +24,7 @@ _____
 There will not be any divisions by zero.
 
 
-[language_fundamentals] [math] 
+[language_fundamentals] [math]
 
 
 
@@ -64,3 +64,49 @@ _________
 */
 //Your code should go here:
 
+// The input will be string, can it be used directly by somehow converting it into operator something.
+// Options are eval.
+// Or switch case.
+// if else if else.
+// What and how to convert input num into any kind base num.
+
+
+function operateEval(num1, num2, operator) {
+    return eval(num1 + operator + num2);
+} // The worst harmful method.
+
+function operateSwitch(num1, num2, operator) {
+    switch (operator) {
+        case "+":
+            return num1 + num2;
+        case "-":
+            return num1 - num2;
+        case "*":
+            return num1 * num2;
+        case "/":
+            if (num2 == 0) {
+                return "Divide by zero error.";
+            }
+            return num1 / num2;
+        case "%":
+            return num1 % num2;
+        default:
+            return "Invalid operator.";
+    }
+} // The best method.
+
+if (require.main == module) {
+    // Test cases.
+    console.log(operateEval(1, 2, "+"));
+    console.log(operateEval(7, 10, "-"));
+    console.log(operateEval(20, 10, "%"));
+
+    console.log(); // Blank line for readability.
+
+    console.log(operateSwitch(1, 2, "+"));
+    console.log(operateSwitch(7, 10, "-"));
+    console.log(operateSwitch(20, 10, "%"));
+}
+
+// 12-09-2023
+// complete.

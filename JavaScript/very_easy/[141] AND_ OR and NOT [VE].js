@@ -48,7 +48,8 @@ _________
 _________
 Bitwise
 https://www.w3schools.com/js/js_bitwise.asp
-JavaScript stores numbers as 64 bits floating point numbers, but all bitwise  operations are performed on 32 bits binary numbers.
+JavaScript stores numbers as 64 bits floating point numbers, but all bitwise 
+ operations are performed on 32 bits binary numbers.
 _________
 _________
 AND gate
@@ -74,3 +75,70 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+
+
+let ANDArrow = (a, b) => a && b;
+
+let ORArrow = (a, b) => a || b;
+
+let NOTArrow = (a) => a == true ? 0 : 1;
+
+
+
+function ANDFunc(a, b) {
+    return a && b;
+}
+
+function ORFunc(a, b) {
+    return a || b;
+}
+
+function NOTFunc(a) {
+    return !a;
+}
+
+function NOTFunc(a) {
+    return a == true ? 0 : 1;
+}
+
+
+if (require.main == module) {
+    // Title.
+    console.log("####  AND, OR and NOT  ####");
+    // Test cases.
+    // Logic gates implemented with Arrow functions.
+    console.log("ANDArrow function");
+    console.log(ANDArrow(1, 1)); // 1
+    console.log(ANDArrow(0, 0)); // 0
+    console.log(ANDArrow(1, 0)); // 0
+
+    console.log("ORArrow function");
+    console.log(ORArrow(1, 0)); // 1
+    console.log(ORArrow(1, 1)); // 1
+    console.log(ORArrow(0, 0)); // 0
+
+    console.log("NOTArrow function");
+    console.log(NOTArrow(0)); // 1
+    console.log(NOTArrow(1)); // 0
+
+    // Logic gates implemented with functions.
+
+    console.log("ANDFunc function");
+    console.log(ANDFunc(1, 1)); // 1
+    console.log(ANDFunc(0, 0)); // 0
+    console.log(ANDFunc(1, 0)); // 0
+
+    console.log("ORFunc function");
+    console.log(ORFunc(1, 0)); // 1
+    console.log(ORFunc(1, 1)); // 1
+    console.log(ORFunc(0, 0)); // 0
+
+    console.log("NOTFunc function");
+    console.log(NOTFunc(0)); // 1
+    console.log(NOTFunc(1)); // 0
+}
+
+// 26 September, 2023.
+// Complete.

@@ -57,3 +57,31 @@ _________
 */
 //Your code should go here:
 
+function isOdd(num) {
+  return Math.abs(num % 2) === 1;
+}
+
+function isOdd2(num) {
+  return Math.abs(num % 2) === 1 ? true : false;
+}
+
+function isOdd3(num) {
+  return num % 2 ? true : false;
+}
+
+
+if (require.main == module) {
+
+  // TEST CASES
+
+  console.log(isOdd(-5)); // Negative values doesn't have parity check?
+  console.log(isOdd(25));
+  console.log(isOdd(0));
+
+  console.log();
+
+  // My test cases.
+
+  console.log(isOdd(1));
+
+}

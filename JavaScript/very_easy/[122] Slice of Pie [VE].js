@@ -14,10 +14,10 @@ _____
 
 ___
 equalSlices(11, 5, 2) ➞ true
-// 5 people x 2 slices each = 10 slices < 11 slices
+5 people x 2 slices each = 10 slices < 11 slices
 
 equalSlices(11, 5, 3) ➞ false
-// 5 people x 3 slices each = 15 slices > 11 slices
+5 people x 3 slices each = 15 slices > 11 slices
 
 equalSlices(8, 3, 2) ➞ true
 
@@ -61,3 +61,22 @@ _________
 */
 //Your code should go here:
 
+function equalSlices(totalSlices, noRecipients, slicesEach) {
+    return slicesEach * noRecipients <= totalSlices;
+}
+
+if (require.main == module) {
+    console.log("####  Equal Slice of Pie?  ####");
+    // Test cases.
+
+    console.log(equalSlices(11, 5, 2)); // true
+    console.log(equalSlices(11, 5, 3)); // false
+    console.log(equalSlices(8, 3, 2)); // true
+    console.log(equalSlices(8, 3, 3)); // false
+    console.log(equalSlices(24, 12, 2)); // true
+
+}
+
+
+// 17-09-2023
+// complete.

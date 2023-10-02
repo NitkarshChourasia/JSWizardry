@@ -60,3 +60,14 @@ _________
 */
 //Your code should go here:
 
+function squared(input_number){
+    return Math.pow(input_number, 2)
+}
+
+if (require.main == module){
+    console.log(squared(5))
+    console.log(squared(9))
+    console.log(squared(100))
+}
+
+// complete.

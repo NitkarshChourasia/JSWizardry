@@ -58,3 +58,19 @@ _________
 */
 //Your code should go here:
 
+function ctoa(char) {
+    return char.charCodeAt(0);
+}
+
+
+if (require.main == module) {
+    console.log("####  Char-to-ASCII  ####");
+    // Test cases.
+    console.log(ctoa("A")); // 65
+    console.log(ctoa("m")); // 109
+    console.log(ctoa("[")); // 91
+    console.log(ctoa("\\")); // 92 // Escaping was to be done, so double backslashes.
+}
+
+// 18-09-2023
+// complete.

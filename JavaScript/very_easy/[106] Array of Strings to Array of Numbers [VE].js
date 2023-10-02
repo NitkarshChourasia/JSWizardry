@@ -56,3 +56,82 @@ _________
 */
 //Your code should go here:
 
+function toNumberArrayWhile(arr) {
+    let i = 0;
+    let newArr = [];
+    while (i < arr.length) {
+        newArr.push(Number(arr[i]));
+        i++;
+    }
+    return newArr;
+}
+
+function toNumberArrayFor(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(Number(arr[i]));
+    }
+    return newArr;
+}
+
+function toNumberArrayForOf(arr) {
+    let newArr = [];
+    for (let i of arr) {
+        newArr.push(Number(i));
+    }
+    return newArr;
+}
+
+// Using map() method.
+
+function toNumberArrayMap(arr) {
+    return arr.map(x => Number(x));
+}
+
+// Using map() method and arrow function.
+
+function toNumberArrayMapOperator(arr) {
+    return arr.map(x => +x);
+}
+
+function toNumberArrayMapNumber(arr) {
+    return arr.map(Number);
+}
+
+
+if (require.main == module) {
+    // Test cases.
+    console.log("While loop:");
+    console.log(toNumberArrayWhile(["9.4", "4.2"]));
+    console.log(toNumberArrayWhile(["91", "44"]));
+    console.log(toNumberArrayWhile(["9.5", "8.8"]));
+
+    console.log("For loop:");
+    console.log(toNumberArrayFor(["9.4", "4.2"]));
+    console.log(toNumberArrayFor(["91", "44"]));
+    console.log(toNumberArrayFor(["9.5", "8.8"]));
+
+    console.log("For of loop:");
+    console.log(toNumberArrayForOf(["9.4", "4.2"]));
+    console.log(toNumberArrayForOf(["91", "44"]));
+    console.log(toNumberArrayForOf(["9.5", "8.8"]));
+
+    console.log("Map method:");
+    console.log(toNumberArrayMap(["9.4", "4.2"]));
+    console.log(toNumberArrayMap(["91", "44"]));
+    console.log(toNumberArrayMap(["9.5", "8.8"]));
+
+    console.log("Map method and arrow function:");
+    console.log(toNumberArrayMapOperator(["9.4", "4.2"]));
+    console.log(toNumberArrayMapOperator(["91", "44"]));
+    console.log(toNumberArrayMapOperator(["9.5", "8.8"]));
+
+    console.log("Map method and Number function:");
+    console.log(toNumberArrayMapNumber(["9.4", "4.2"]));
+    console.log(toNumberArrayMapNumber(["91", "44"]));
+    console.log(toNumberArrayMapNumber(["9.5", "8.8"]));
+
+}
+
+// 12-09-2023
+// complete.

@@ -59,3 +59,47 @@ _________
 */
 //Your code should go here:
 
+function flipBoolTernary(bool) {
+    return bool ? 0 : 1;
+}
+
+function flipBoolCasting(boolFlag) {
+    return Number(!boolFlag);
+}
+
+function flipBoolIfElse(bool) {
+    if (bool === true || bool === 1) {
+        return 0;
+    }
+    return 1;
+}
+
+if (require.main == module) {
+    console.log(flipBoolTernary(true));
+    console.log(flipBoolTernary(false));
+    console.log(flipBoolTernary(1));
+    console.log(flipBoolTernary(0));
+    console.log(flipBoolTernary(3));
+
+    console.log();
+
+    console.log(flipBoolCasting(true));
+    console.log(flipBoolCasting(false));
+    console.log(flipBoolCasting(1));
+    console.log(flipBoolCasting(0));
+    console.log(flipBoolTernary(3));
+
+    console.log();
+
+    console.log(flipBoolIfElse(true));
+    console.log(flipBoolIfElse(false));
+    console.log(flipBoolIfElse(1));
+    console.log(flipBoolIfElse(0));
+    console.log(flipBoolTernary(3));
+
+
+}
+
+
+// 08-09-2023
+// complete.

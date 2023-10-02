@@ -74,3 +74,18 @@ _________
 */
 //Your code should go here:
 
+function theZero(x) {
+  if (x > 0) return "Positive.";
+  if (x < 0) return "Negative.";
+  return true;
+}
+
+if (require.main == module) {
+  console.log(theZero(0));
+  console.log(theZero(5));
+  console.log(theZero(-2));
+}
+
+
+// 05-09-2023
+// complete.

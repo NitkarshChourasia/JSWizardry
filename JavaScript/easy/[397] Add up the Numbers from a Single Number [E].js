@@ -76,3 +76,25 @@ _________
 */
 //Your code should go here:
 
+function addUp(num) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("#### Add up the Numbers from a Single Number ####");
+    // Test cases.
+
+    console.log(addUp(4)); // 10
+    console.log(addUp(13)); // 91
+    console.log(addUp(600)); // 180300
+
+    // End of script.
+}
+
+// 26 September, 2023.
+// complete.

@@ -1,7 +1,9 @@
 /*
 ####  Two Makes Ten  ####
 
-Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+Create a function that takes two arguments. 
+Both arguments are integers, a and b. 
+Return true if one of them is 10 or if their sum is 10.
 
 
 [Examples]
@@ -56,3 +58,25 @@ _________
 */
 //Your code should go here:
 
+function makesTen(a, b) {
+    return a === 10 || b === 10 || a + b === 10;
+}
+
+if (require.main == module) {
+    // TEST CASES:
+    console.log(makesTen(9, 10));
+    console.log(makesTen(9, 9));
+    console.log(makesTen(1, 9));
+
+    // This is good.
+    console.log(makesTen(10, 1));
+    console.log(makesTen(10, 10));
+    console.log(makesTen(8, 2));
+    console.log(makesTen(8, 3));
+    console.log(makesTen(10, 42));
+    console.log(makesTen(12, -2));
+    console.log(makesTen(0, 77));
+}
+
+
+// complete.

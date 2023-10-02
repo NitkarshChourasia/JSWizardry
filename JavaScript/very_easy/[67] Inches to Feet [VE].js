@@ -60,3 +60,22 @@ _________
 */
 //Your code should go here:
 
+function inchesToFeet(inches){
+    return Math.floor(inches/12);
+}
+
+if (require.main == module){
+    console.log(inchesToFeet(324));
+    console.log(inchesToFeet(12));
+    console.log(inchesToFeet(36));
+
+    console.log();
+
+    console.log(inchesToFeet(11));
+    console.log(inchesToFeet(0));
+    console.log(inchesToFeet(1));
+}
+
+
+// 05-09-2023
+// complete.

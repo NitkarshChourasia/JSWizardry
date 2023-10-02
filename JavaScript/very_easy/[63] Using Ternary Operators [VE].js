@@ -55,3 +55,14 @@ _________
 */
 //Your code should go here:
 
+function yeah_nope(bool) {
+  return bool ? "yeah" : "nope";
+}
+
+if (require.main == module) {
+  console.log(yeah_nope(true));
+  console.log(yeah_nope(false));
+}
+
+// 05-09-2023
+// complete.

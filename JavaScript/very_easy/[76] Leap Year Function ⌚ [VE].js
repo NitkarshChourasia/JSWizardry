@@ -73,3 +73,23 @@ _________
 */
 //Your code should go here:
 
+
+function leapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+}
+
+
+if (require.main == module) {
+    // Test cases.
+    console.log(leapYear(1990));
+    console.log(leapYear(1924));
+    console.log(leapYear(2021));
+
+    console.log();
+    // My test cases.
+    console.log(leapYear(1900));
+    console.log(leapYear(2000));
+}
+
+// 7-09-2023
+// complete.

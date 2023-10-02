@@ -12,6 +12,8 @@ frontThree("Python") ➞ "PytPytPyt"
 frontThree("Cucumber") ➞ "CucCucCuc"
 
 frontThree("bioshock") ➞ "biobiobio"
+
+frontThree("nitkarsh") ➞ "nitnitnit"
 _____
 
 
@@ -61,3 +63,34 @@ _________
 */
 //Your code should go here:
 
+
+function frontThree(str) {
+    return str.length < 3 ? str.repeat(3) : str.slice(0, 3).repeat(3);
+} // It may not be necessary given the situation.
+
+function frontThreeTry(str) {
+    return str.slice(0, 3).repeat(3);
+} // It works well.
+
+if (require.main == module) {
+    // Test cases.
+    console.log(frontThree("Python"));
+    console.log(frontThree("Cucumber"));
+    console.log(frontThree("bioshock"));
+    console.log(frontThree("nitkarsh"));
+    // Custom test cases.
+    console.log(frontThree("hi"));
+
+    console.log(); // Try. Black line for readability.
+    console.log("Try:");
+
+    console.log(frontThreeTry("Python"));
+    console.log(frontThreeTry("Cucumber"));
+    console.log(frontThreeTry("bioshock"));
+    console.log(frontThreeTry("nitkarsh"));
+    // Custom test cases.
+    console.log(frontThreeTry("hi"));
+}
+
+// 12-09-2023
+// complete.

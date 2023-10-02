@@ -51,3 +51,17 @@ _________
 */
 //Your code should go here:
 
+const a = "John";
+const b = "Joe";
+const c = "Jack";
+
+function formatString(a, b, c) {
+    return `Their names were: ${a}, ${b} and ${c}.`;
+}
+
+if (require.main == module) {
+    console.log(formatString(a, b, c));
+}
+
+// 05-09-2023
+// complete.

@@ -56,3 +56,16 @@ _________
 */
 //Your code should go here:
 
+
+function radiansToDegrees(radians) {
+    return radians * (180 / Math.PI);
+}
+
+if (require.main == module) {
+    console.log(radiansToDegrees(1));
+    console.log(radiansToDegrees(20));
+    console.log(radiansToDegrees(50));
+}
+
+// 05-09-2023
+// complete.

@@ -42,3 +42,20 @@ _________
 */
 //Your code should go here:
 
+
+"use strict";
+
+// Default values used to avoid output: undefined
+const obj = { two: 2 }
+var { one = 1, two } = obj
+
+if (require.main == module) {
+    // Title.
+    console.log("####  ES6: Destructuring Objects  ####");
+    // Test cases.
+    console.log(one) // outputs 1
+    console.log(two) // outputs 2
+}
+
+// 2-October-2023
+// complete.

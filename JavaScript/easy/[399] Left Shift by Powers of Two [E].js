@@ -66,3 +66,43 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+function shiftToLeft(x, y) {
+    return x * Math.pow(2, y);
+}
+
+function shiftToLeftRecursion(x, y) {
+    if (y === 0) {
+        return x;
+    }
+    return shiftToLeftRecursion(x * 2, y - 1);
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Left Shift by Powers of Two  ####");
+    // Test cases.
+    console.log("Simple version:");
+    console.log(shiftToLeft(5, 2)); // 20
+    console.log(shiftToLeft(10, 3)); // 80
+    console.log(shiftToLeft(-32, 2)); // -128
+    console.log(shiftToLeft(-6, 5)); // -192
+    console.log(shiftToLeft(12, 4)); // 192
+    console.log(shiftToLeft(46, 6)); // 2944
+
+    // Custom test cases.
+    console.log(shiftToLeft(2, 10)); // 2048
+
+    console.log("Recursion version:");
+    console.log(shiftToLeftRecursion(5, 2)); // 20
+    console.log(shiftToLeftRecursion(10, 3)); // 80
+    console.log(shiftToLeftRecursion(-32, 2)); // -128
+    console.log(shiftToLeftRecursion(-6, 5)); // -192
+    console.log(shiftToLeftRecursion(12, 4)); // 192
+    console.log(shiftToLeftRecursion(46, 6)); // 2944
+    // End of script.
+}
+
+// 26 September, 2023.
+// complete.

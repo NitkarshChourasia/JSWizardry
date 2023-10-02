@@ -8,12 +8,12 @@ Given a string, return true if its length is even or false if the length is odd.
 
 ___
 oddOrEven("apples") ➞ true
-// The word "apples" has 6 characters.
-// 6 is an even number, so the program outputs true.
+-> The word "apples" has 6 characters.
+-> 6 is an even number, so the program outputs true.
 
 oddOrEven("pears") ➞ false
-// "pears" has 5 letters, and 5 is odd.
-// Therefore the program outputs false.
+-> "pears" has 5 letters, and 5 is odd.
+-> Therefore the program outputs false.
 
 oddOrEven("cherry") ➞ true
 _____
@@ -25,7 +25,7 @@ _____
 N/A
 
 
-[conditions] [strings] [validation] 
+[conditions] [strings] [validation]
 
 
 
@@ -60,3 +60,17 @@ _________
 */
 //Your code should go here:
 
+
+function lengthParity(str_in) {
+    return str_in.length % 2 === 0;
+}
+
+if (require.main == module) {
+    console.log(lengthParity("apples"));
+    console.log(lengthParity("pears"));
+    console.log(lengthParity("cherry"));
+}
+
+
+// 05-09-2023
+// complete.

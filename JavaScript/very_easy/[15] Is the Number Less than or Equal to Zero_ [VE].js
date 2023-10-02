@@ -51,3 +51,14 @@ _________
 */
 //Your code should go here:
 
+function lessThanOrEqualToZero(input_number){
+    return input_number <= 0
+}
+
+if (require.main == module){
+    console.log(lessThanOrEqualToZero(5))
+    console.log(lessThanOrEqualToZero(0))
+    console.log(lessThanOrEqualToZero(-2))
+}
+
+// complete.

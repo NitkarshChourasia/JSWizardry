@@ -51,3 +51,16 @@ _________
 */
 //Your code should go here:
 
+function reverse(arr) {
+    return arr.reverse();
+}
+
+
+if (require.main == module) {
+    console.log(reverse([1, 2, 3, 4]));
+    console.log(reverse([9, 9, 2, 3, 4]));
+    console.log(reverse([]));
+}
+
+// 05-09-2023
+// complete.

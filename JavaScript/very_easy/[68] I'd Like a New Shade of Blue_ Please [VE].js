@@ -61,3 +61,15 @@ _________
 */
 //Your code should go here:
 
+function howManyWalls(paintHave, width, height) {
+    return Math.floor(paintHave / (width * height));
+}
+
+if (require.main == module) {
+    console.log(howManyWalls(100, 4, 5));
+    console.log(howManyWalls(10, 15, 12));
+    console.log(howManyWalls(41, 3, 6));
+}
+
+// 05-09-2023
+// complete.

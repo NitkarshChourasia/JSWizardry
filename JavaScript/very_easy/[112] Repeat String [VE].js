@@ -8,7 +8,7 @@ If given argument txt is not a string, return Not A String !!
 [Examples]
 
 ___
-repeatString("Mubashir", 2) ➞ "MubashirMubashir"
+repeatString("Nitkarsh", 2) ➞ "MubashirMubashir"
 
 repeatString("Matt", 3) ➞ "MattMattMatt"
 
@@ -67,3 +67,25 @@ _________
 */
 //Your code should go here:
 
+"use strict"
+
+function repeatString(txt, n) {
+    if (typeof txt !== "string") {
+        return "Not A String !!";
+    }
+    else {
+        return txt.repeat(n);
+    }
+}
+
+if (require.main == module) {
+    console.log("####  Repeat String  ####\n")
+    // Test cases.
+    console.log(repeatString("Nitkarsh", 2));
+    console.log(repeatString("Matt", 3));
+    console.log(repeatString(1990, 7));
+}
+
+
+// 12-09-2023
+// complete.

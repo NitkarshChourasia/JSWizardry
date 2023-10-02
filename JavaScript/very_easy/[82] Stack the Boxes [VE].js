@@ -53,3 +53,24 @@ _________
 */
 //Your code should go here:
 
+function stackBoxes(n) {
+    return Math.pow(n, 2);
+}
+
+if (require.main == module) {
+
+    // Test cases.
+    console.log(stackBoxes(1));
+    console.log(stackBoxes(2));
+    console.log(stackBoxes(0));
+
+    console.log();  // Blank line for readability.
+
+    // My test cases.
+
+    console.log(stackBoxes(3));
+    console.log(stackBoxes(4));
+}
+
+// 08-09-2023
+// complete.
