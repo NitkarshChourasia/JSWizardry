@@ -52,3 +52,27 @@ _________
 */
 //Your code should go here:
 
+// Method 1: Using Spread Syntax (...) and Array.prototype.sort() and Array.prototype.join().
+function sortWordSpread(word) {
+    return [...word].sort().join("");
+}
+
+// Method 2 : Using String.prototype.split() and Array.prototype.sort() and Array.prototype.join().
+function sortWordSplit(word) {
+    return word.split("").sort().join("");
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Fix the Broken Code  ####");
+    console.log("### Sort the Letters in a Word ###");
+    // Test cases.
+    console.log(sortWordSpread("dcba")); // outputs abcd
+    console.log(sortWordSplit("Unpredictable")); // outputs Uabcdeeilnprt
+    console.log(sortWordSpread("pneumonoultramicroscopicsilicovolcanoconiosis")); // outputs aacccccceiiiiiilllmmnnnnooooooooopprrsssstuuv
+
+    // End of script.
+}
+
+// 2-October-2023
+// complete.
