@@ -65,3 +65,41 @@ _________
 */
 //Your code should go here:
 
+function wordLengthsFuncMap(arr) {
+    let newArr = [];
+    arr.map((x) => newArr.push(x.length));
+    return newArr;
+}
+
+function wordLengthsForEach(arr) {
+    let newArr = [];
+    arr.forEach((x) => newArr.push(x.length));
+    return newArr;
+}
+
+wordLengthsArrowMap = (arr) => arr.map((x) => x.length);
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Array of Word Lengths  ####");
+    // Test cases.
+
+    console.log(wordLengthsFuncMap(["hello", "world"])); // [5, 5]
+    console.log(wordLengthsFuncMap(["Halloween", "Thanksgiving", "Christmas"])); // [9, 12, 9]
+    console.log(wordLengthsFuncMap(["She", "sells", "seashells", "down", "by", "the", "seashore"])); // [3, 5, 9, 4, 2, 3, 8]
+
+
+    console.log(wordLengthsArrMap(["hello", "world"])); // [5, 5]
+    console.log(wordLengthsArrMap(["Halloween", "Thanksgiving", "Christmas"])); // [9, 12, 9]
+    console.log(wordLengthsArrMap(["She", "sells", "seashells", "down", "by", "the", "seashore"])); // [3, 5, 9, 4, 2, 3, 8]
+
+
+    console.log(wordLengthsForEach(["hello", "world"])); // [5, 5]
+    console.log(wordLengthsForEach(["Halloween", "Thanksgiving", "Christmas"])); // [9, 12, 9]
+    console.log(wordLengthsForEach(["She", "sells", "seashells", "down", "by", "the", "seashore"])); // [3, 5, 9, 4, 2, 3, 8]
+
+    // End of script.
+}
+
+// 2-October-2023.
+// complete.
