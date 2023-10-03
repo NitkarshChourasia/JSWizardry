@@ -8,10 +8,10 @@ Create a function that takes a number n and returns the nth even number beginnin
 
 ___
 nthEven(1) ➞ 0
-// 0 is first even number
+0 is first even number
 
 nthEven(2) ➞ 2
-// 2 is second even number
+2 is second even number
 
 nthEven(100) ➞ 198
 _____
@@ -23,7 +23,7 @@ _____
 N/A
 
 
-[language_fundamentals] [math] [numbers] 
+[language_fundamentals] [math] [numbers]
 
 
 
@@ -48,3 +48,20 @@ _________
 */
 //Your code should go here:
 
+function nthEven(n) {
+    return n * 2 - 2;
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Nth Even Number  ####");
+    // Test cases.
+    console.log(nthEven(1)); // 0
+    console.log(nthEven(2)); // 2
+    console.log(nthEven(100)); // 198
+
+    // End of script.
+}
+
+// 3-October-2023
+// complete.
