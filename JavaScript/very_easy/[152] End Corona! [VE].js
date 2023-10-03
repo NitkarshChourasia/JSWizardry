@@ -55,3 +55,22 @@ _________
 */
 //Your code should go here:
 
+function endCorona(recover, newCases, activeCases) {
+    if (recover > newCases) {
+        return Math.ceil(activeCases / (recover - newCases));
+    }
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  End Corona!  ####");
+    // Test cases.
+    console.log(endCorona(4000, 2000, 77000)); // 39
+    console.log(endCorona(3000, 2000, 50699)); // 51
+    console.log(endCorona(30000, 25000, 390205)); // 79
+
+    // End of script.
+}
+
+// 3-October-2023
+// complete.
