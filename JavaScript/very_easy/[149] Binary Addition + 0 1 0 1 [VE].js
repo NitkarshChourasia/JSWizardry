@@ -70,3 +70,21 @@ _________
 */
 //Your code should go here:
 
+function addBinary(num1, num2) {
+    return (num1 + num2).toString(2);
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("#### Binary Addition + 0 1 0 1  ####");
+    // Test cases.
+
+    console.log(addBinary(1, 1)); // 10
+    console.log(addBinary(1, 2)); // 11
+    console.log(addBinary(4, 5)); // 1001
+
+    // End of script.
+}
+
+// 3-October-2023
+// complete.
