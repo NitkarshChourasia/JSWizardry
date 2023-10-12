@@ -71,3 +71,18 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+function spaceMeOut(str) {
+    return str.split("").join(" ");
+}
+
+let spaceMeOut = (str) => str.split("").join(" ");
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Spaces Between Each Character  ####");
+    // Test cases.
+
+    // End of script.
+}

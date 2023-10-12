@@ -24,7 +24,7 @@ With ES6, you can assign variables from arrays in a much more succinct way.
 Check the Resources tab for more examples.
 
 
-[arrays] [language_fundamentals] 
+[arrays] [language_fundamentals]
 
 
 
@@ -49,3 +49,6 @@ _________
 */
 //Your code should go here:
 
+
+
+// Check out the resources, please.

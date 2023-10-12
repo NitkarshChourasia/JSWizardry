@@ -84,3 +84,40 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+function volPizza(radius, height) {
+    return Math.round(Math.PI * Math.pow(radius, 2) * height);
+}
+
+function volPizza(radius, height) {
+    return Math.round(Math.PI * radius ** 2 * height);
+}
+
+function volPizza(radius, height) {
+    return Math.round(Math.PI * radius * radius * height);
+}
+
+
+function volPizza(radius, height) {
+    return Math.round(Math.PI * radius * radius * height);
+}
+
+
+function volPizza(radius, height) {
+    return Math.round(Math.PI * radius * radius * height);
+}
+
+function volPizza(radius, height) {
+    return Math.round(Math.PI * radius * radius * height);
+}
+
+let volPizza = (radius, height) => Math.round(Math.PI * Math.pow(radius, 2) * height);
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Volume of a Pizza  ####");
+    // Test cases.
+
+    // End of script.
+}

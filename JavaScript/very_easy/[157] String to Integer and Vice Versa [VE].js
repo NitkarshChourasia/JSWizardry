@@ -43,7 +43,9 @@ _________
 _________
 JavaScript Number Methods
 https://www.w3schools.com/js/js_number_methods.asp
-But with JavaScript, methods and properties are also available to primitive  values, because JavaScript treats primitive values as objects when executing  methods and …
+But with JavaScript, methods and properties are also available to primitive 
+ values, because JavaScript treats primitive values as objects when executing 
+ methods and …
 _________
 _________
 Converting Strings to Numbers
@@ -89,3 +91,53 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+let toInt = (str) => parseInt(str);
+let toStr = (num) => num.toString();
+
+function toInt(str) {
+    return parseInt(str);
+}
+
+function toStr(num) {
+    return num.toString();
+}
+
+
+
+class StringAndNumberConverter {
+    constructor() {
+        this.toInt = (str) => parseInt(str);
+        this.toStr = (num) => num.toString();
+    }
+}
+
+class StringAndNumberConverter {
+
+    function toInt(str) {
+    return parseInt(str);
+}
+
+function toStr(num) {
+    return num.toString();
+}
+
+}
+
+class StringAndNumberConverter {
+
+    toInt(str) {
+        return parseInt(str);
+    }
+
+    toStr(num) {
+        return num.toString();
+    }
+
+    toFloat(inputValue) {
+        return parseFloat(inputValue);
+    }
+}
+
+// let converter = new StringAndNumberConverter();

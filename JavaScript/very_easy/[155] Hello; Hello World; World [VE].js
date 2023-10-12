@@ -57,3 +57,47 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+function helloWorld(num) {
+    return num % 3 === 0 && num % 5 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : num % 5 === 0 ? "World" : `${num} Invalid for this function.`;
+}
+
+function helloWorld(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "Hello World";
+    }
+    elif(num % 3 === 0) {
+        return "Hello";
+    }
+    elif(num % 5 === 0) {
+        return "World";
+    }
+    else {
+        return `${num} Invalid for this function.`;
+    }
+}
+
+function helloWorld(num) {
+    switch (num) {
+        case num % 3 === 0 && num % 5 === 0:
+            return "Hello World";
+        case num % 3 === 0:
+            return "Hello";
+        case num % 5 === 0:
+            return "World";
+        default:
+            return `${num} Invalid for this function.`;
+    }
+}
+
+
+let helloWorld = (num) => num % 3 === 0 && num % 5 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : num % 5 === 0 ? "World" : `${num} Invalid for this function.`;
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Hello; Hello World; World  ####");
+    // Test cases.
+
+    // End of script.
+}

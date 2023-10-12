@@ -61,3 +61,25 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+function longBurp(num) {
+    if num >= 1{
+        return `Bu$(r.repeat(num))p`;
+    }
+    return "Invalid input";
+}
+
+function longBurp(num) {
+    return num >= 1 ? `Bu$(r.repeat(num))p` : "Invalid input";
+}
+
+let longBurp = (num) => num >= 1 ? `Bu$(r.repeat(num))p` : "Invalid input";
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Burrrrrrrp  ####");
+    // Test cases.
+
+    // End of script.
+}
