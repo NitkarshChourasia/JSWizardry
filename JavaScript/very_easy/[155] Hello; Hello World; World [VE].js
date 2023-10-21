@@ -59,27 +59,31 @@ _________
 
 "use strict";
 
-function helloWorld(num) {
-    return num % 3 === 0 && num % 5 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : num % 5 === 0 ? "World" : `${num} Invalid for this function.`;
+// Method 1: ternary operators (f).
+function helloWorldTernary(num) {
+    return num % 3 === 0 && num % 5 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : num % 5 === 0 ? "World" : `Input ${num} is invalid for this function.`;
 }
 
-function helloWorld(num) {
+// Method 2: if-elif-else statements (f).
+function helloWorldIfElifElse(num) {
     if (num % 3 === 0 && num % 5 === 0) {
         return "Hello World";
     }
-    elif(num % 3 === 0) {
+    else if (num % 3 === 0) {
         return "Hello";
     }
-    elif(num % 5 === 0) {
+    else if (num % 5 === 0) {
         return "World";
     }
     else {
-        return `${num} Invalid for this function.`;
+        return `Input ${num} is invalid for this function.`;
     }
 }
 
-function helloWorld(num) {
-    switch (num) {
+
+// Method 3: switch statement (f).
+function helloWorldSwitch(num) {
+    switch (true) {
         case num % 3 === 0 && num % 5 === 0:
             return "Hello World";
         case num % 3 === 0:
@@ -87,17 +91,46 @@ function helloWorld(num) {
         case num % 5 === 0:
             return "World";
         default:
-            return `${num} Invalid for this function.`;
+            return `Input ${num} is invalid for this function.`;
     }
 }
 
 
-let helloWorld = (num) => num % 3 === 0 && num % 5 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : num % 5 === 0 ? "World" : `${num} Invalid for this function.`;
+// Method 4: Arrow function and ternary operators. 
+let helloWorldArrow = (num) => num % 3 === 0 && num % 5 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : num % 5 === 0 ? "World" : `Input ${num} is invalid for this function.`;
 
 if (require.main == module) {
     // Title.
     console.log("####  Hello; Hello World; World  ####");
     // Test cases.
 
+    console.log("Method 1: ternary operators (f).");
+    console.log(helloWorldTernary(3)); // Hello
+    console.log(helloWorldTernary(5)); // World
+    console.log(helloWorldTernary(15)); // Hello World
+    console.log(helloWorldTernary(2)); // 2 Invalid for this function.
+
+
+    console.log("Method 2: if-elif-else statements (f).");
+    console.log(helloWorldIfElifElse(3)); // Hello
+    console.log(helloWorldIfElifElse(5)); // World
+    console.log(helloWorldIfElifElse(15)); // Hello World
+    console.log(helloWorldIfElifElse(2)); // 2 Invalid for this function.
+
+
+    console.log("Method 3: switch statement (f).");
+    console.log(helloWorldSwitch(3)); // Hello
+    console.log(helloWorldSwitch(5)); // World
+    console.log(helloWorldSwitch(15)); // Hello World
+    console.log(helloWorldSwitch(2)); // 2 Invalid for this function.
+
+
+    console.log("Method 4: Arrow function and ternary operators.");
+    console.log(helloWorldArrow(3)); // Hello
+    console.log(helloWorldArrow(5)); // World
+    console.log(helloWorldArrow(15)); // Hello World
+    console.log(helloWorldArrow(2)); // 2 Invalid for this function.
+
     // End of script.
 }
+
