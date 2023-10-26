@@ -93,39 +93,27 @@ _________
 
 "use strict";
 
-let toInt = (str) => parseInt(str);
-let toStr = (num) => num.toString();
+let toIntArrow = (str) => parseInt(str);
+let toStrArrow = (num) => num.toString();
 
-function toInt(str) {
+function toIntSFunc(str) {
     return parseInt(str);
 }
 
-function toStr(num) {
+function toStrSFunc(num) {
     return num.toString();
 }
 
 
 
-class StringAndNumberConverter {
+class StringAndNumberConverterUsedConstructor {
     constructor() {
         this.toInt = (str) => parseInt(str);
         this.toStr = (num) => num.toString();
     }
 }
 
-class StringAndNumberConverter {
-
-    function toInt(str) {
-    return parseInt(str);
-}
-
-function toStr(num) {
-    return num.toString();
-}
-
-}
-
-class StringAndNumberConverter {
+class StringAndNumberConverterUsedFunction {
 
     toInt(str) {
         return parseInt(str);
@@ -134,10 +122,50 @@ class StringAndNumberConverter {
     toStr(num) {
         return num.toString();
     }
-
-    toFloat(inputValue) {
-        return parseFloat(inputValue);
-    }
 }
 
-// let converter = new StringAndNumberConverter();
+
+if (require.main == module) {
+    // Title.
+    console.log("####  String to Integer and Vice Versa  ####");
+    // Test cases.
+
+    console.log("Test Cases:"); // Test Cases.
+    // Arrow functions.
+    console.log(toIntArrow("77")); // 77
+    console.log(toIntArrow("532")); // 532
+    console.log(toStrArrow(77)); // 77
+    console.log(toStrArrow(532)); // 532
+
+    // Standard functions.
+    console.log(toIntSFunc("77")); // 77
+    console.log(toIntSFunc("532")); // 532
+    console.log(toStrSFunc(77)); // 77
+    console.log(toStrSFunc(532)); // 532
+
+
+    // Classes.
+
+    // Class 1: Using constructor.
+
+    // obj1 = new StringAndNumberConverterUsedConstructor();
+
+    // console.log(obj1.toInt("77")); // 77
+    // console.log(obj1.toInt("532")); // 532
+    // console.log(obj1.toStr(77)); // 77
+    // console.log(obj1.toStr(532)); // 532
+
+    // Class 2: Using function.
+
+    // obj2 = new StringAndNumberConverterUsedFunction();
+
+    // console.log(obj2.toInt("77")); // 77
+    // console.log(obj2.toInt("532")); // 532
+    // console.log(obj2.toStr(77)); // 77
+    // console.log(obj2.toStr(532)); // 532
+
+    // End of script.
+}
+
+// 26-October-2023
+// incomplete
