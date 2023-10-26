@@ -63,23 +63,52 @@ _________
 
 "use strict";
 
-function longBurp(num) {
-    if num >= 1{
-        return `Bu$(r.repeat(num))p`;
+function longBurpSFuncIf(num) {
+    if (num >= 1) {
+        return `Bu${"r".repeat(num)}p`;
     }
     return "Invalid input";
 }
 
-function longBurp(num) {
-    return num >= 1 ? `Bu$(r.repeat(num))p` : "Invalid input";
+function longBurpSFucnTernary(num) {
+    return num >= 1 ? `Bu$("r".repeat(num))p` : "Invalid input";
 }
 
-let longBurp = (num) => num >= 1 ? `Bu$(r.repeat(num))p` : "Invalid input";
+let longBurpArrowFuncTernary = (num) => num >= 1 ? `Bu$("r".repeat(num))p` : "Invalid input";
 
 if (require.main == module) {
     // Title.
     console.log("####  Burrrrrrrp  ####");
     // Test cases.
 
+    // Method 1: Using standard function and if statement.
+
+    console.log("Method 1: Using standard function and if statement.");
+    console.log(longBurpSFuncIf(3)); // Burrrp
+    console.log(longBurpSFuncIf(5)); // Burrrrrp
+    console.log(longBurpSFuncIf(9)); // Burrrrrrrrrp
+    // Invalid input.
+    console.log(longBurpSFuncIf(0)); // Invalid input
+
+    // Method 2: Using standard function and ternary operator.
+
+    console.log("Method 2: Using standard function and ternary operator.");
+    console.log(longBurpSFucnTernary(3)); // Burrrp
+    console.log(longBurpSFucnTernary(5)); // Burrrrrp
+    console.log(longBurpSFucnTernary(9)); // Burrrrrrrrrp
+    // Invalid input.
+    console.log(longBurpSFucnTernary(0)); // Invalid input
+
+    // Method 3: Using arrow function and ternary operator.
+    console.log("Method 3: Using arrow function and ternary operator.");
+    console.log(longBurpArrowFuncTernary(3)); // Burrrp
+    console.log(longBurpArrowFuncTernary(5)); // Burrrrrp
+    console.log(longBurpArrowFuncTernary(9)); // Burrrrrrrrrp
+    // Invalid input.
+    console.log(longBurpArrowFuncTernary(0)); // Invalid input
+
     // End of script.
 }
+
+// 26-October-2023
+// complete.
