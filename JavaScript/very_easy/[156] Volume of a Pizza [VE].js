@@ -86,38 +86,34 @@ _________
 
 "use strict";
 
-function volPizza(radius, height) {
+// Method 1: Using Standard function.
+function volPizzaFunc(radius, height) {
     return Math.round(Math.PI * Math.pow(radius, 2) * height);
 }
 
-function volPizza(radius, height) {
-    return Math.round(Math.PI * radius ** 2 * height);
-}
 
-function volPizza(radius, height) {
-    return Math.round(Math.PI * radius * radius * height);
-}
-
-
-function volPizza(radius, height) {
-    return Math.round(Math.PI * radius * radius * height);
-}
-
-
-function volPizza(radius, height) {
-    return Math.round(Math.PI * radius * radius * height);
-}
-
-function volPizza(radius, height) {
-    return Math.round(Math.PI * radius * radius * height);
-}
-
-let volPizza = (radius, height) => Math.round(Math.PI * Math.pow(radius, 2) * height);
+// Method 2: Using Arrow function.
+let volPizzaArrowFunc = (radius, height) => Math.round(Math.PI * Math.pow(radius, 2) * height);
 
 if (require.main == module) {
     // Title.
     console.log("####  Volume of a Pizza  ####");
     // Test cases.
 
+    // Method 1: Using Standard function.
+    console.log("Method 1: Using Standard function."); // Method 1: Using Standard function.
+    console.log(volPizzaFunc(1, 1)); // 3
+    console.log(volPizzaFunc(7, 2)); // 308
+    console.log(volPizzaFunc(10, 2.5)); // 785
+
+    // Method 2: Using Arrow function.
+    console.log("Method 2: Using Arrow function."); // Method 2: Using Arrow function.
+    console.log(volPizzaArrowFunc(1, 1)); // 3
+    console.log(volPizzaArrowFunc(7, 2)); // 308
+    console.log(volPizzaArrowFunc(10, 2.5)); // 785
+
     // End of script.
 }
+
+// 26-October-2023
+// complete.
