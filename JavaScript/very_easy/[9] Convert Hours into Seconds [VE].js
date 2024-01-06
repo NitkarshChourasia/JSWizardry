@@ -55,6 +55,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function howManySeconds(hours) {
     return hours * 60 * 60;
     // return hours * 3600;

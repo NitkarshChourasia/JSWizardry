@@ -78,6 +78,7 @@ _________
 */
 //Your code should go here:
 
+"use strict";
 
 function triArea(base, height) {
     return (base * height) / 2;

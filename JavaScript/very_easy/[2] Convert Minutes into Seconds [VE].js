@@ -86,6 +86,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function convert(minutes) {
     // return `${minutes} minutes is equal to ${minutes * 60} seconds.`
     return `${minutes} mins = ${minutes * 60} secs`
@@ -94,8 +96,8 @@ function convert(minutes) {
 
 if (require.main == module) {
 
-console.log(convert(5))
-console.log(convert(3))
-console.log(convert(2))
+    console.log(convert(5))
+    console.log(convert(3))
+    console.log(convert(2))
 
 }

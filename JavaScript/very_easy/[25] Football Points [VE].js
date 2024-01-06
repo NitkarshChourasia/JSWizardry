@@ -63,6 +63,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function footballPoints(wins, draws, losses) {
     return wins * 3 + draws
 }

@@ -9,10 +9,10 @@ Create a function which returns the distance that the taxi must've travelled, gi
 
 ___
 journeyDistance(3) ➞ 1
-// The first kilometer costs $3
+The first kilometer costs $3
 
 journeyDistance(9) ➞ 4
-// The first kilometer costs $3 plus the other three kilometers (costing $2 each)
+The first kilometer costs $3 plus the other three kilometers (costing $2 each)
 
 journeyDistance(5) ➞ 2
 _____
@@ -58,3 +58,47 @@ _________
 */
 //Your code should go here:
 
+// Method 1: function and Math.floor.
+function journeyDistance(cost) {
+    if (cost >= 0) {
+        return Math.floor((cost - 3) / 2) + 1;
+    }
+    return "Invalid input";
+}
+
+// Method 2: Function and ternary operator.
+function journeyDistance(cost) {
+    return cost >= 0 ? Math.floor((cost - 3) / 2) + 1 : "Invalid input";
+}
+
+
+// Method 3: Function and ternary operator and ~~ instead of Math.floor.
+function journeyDistance(cost) {
+    return cost >= 0 ? ~~((cost - 3) / 2) + 1 : "Invalid input";
+} // ~~ instead of Math.floor acts as the same, here, reason it removes the decimal, returns only int.
+
+
+if (require.main == module) {
+    // Title.
+    console.log("####  Taxi Journey  ####");
+    // Test cases.
+    console.log("Method 1: function and Math.floor.");
+    console.log(journeyDistance(3)); // 1
+    console.log(journeyDistance(9)); // 4
+    console.log(journeyDistance(5)); // 2
+
+    console.log("Method 2: Function and ternary operator.");
+    console.log(journeyDistance(3)); // 1
+    console.log(journeyDistance(9)); // 4
+    console.log(journeyDistance(5)); // 2
+
+    console.log("Method 3: Function and ternary operator and ~~ instead of Math.floor.");
+    console.log(journeyDistance(3)); // 1
+    console.log(journeyDistance(9)); // 4
+    console.log(journeyDistance(5)); // 2
+
+    // End of script
+}
+
+// 12 October, 2023.
+// complete.

@@ -74,9 +74,12 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function boolToString(flag) {
     // To add lots of restrictions is left, to do.
     return flag.toString();
+    // return(str)
 }
 
 

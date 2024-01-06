@@ -51,6 +51,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function lessThanOrEqualToZero(input_number){
     return input_number <= 0
 }

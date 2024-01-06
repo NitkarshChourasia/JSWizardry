@@ -71,3 +71,27 @@ _________
 */
 //Your code should go here:
 
+function intOrString(inputValue) {
+    return typeof inputValue == "number" ? "int" : "str";
+}
+
+if (require.main == module) {
+    // Title.
+    console.log("####  String or Integer?  ####");
+    // Test cases.
+    console.log(intOrString(8)); // "int"
+    console.log(intOrString("Hello")); // "str"
+    console.log(intOrString(9843532)); // "int"
+
+
+    // Custom test cases.
+    console.log(intOrString("")); // "str"
+    console.log(intOrString(" ")); // "str"
+    console.log(intOrString("123")); // "str"
+    console.log(intOrString(123.45)); // "int"
+
+    // End of script.
+}
+
+// 03-October-2023
+// complete.

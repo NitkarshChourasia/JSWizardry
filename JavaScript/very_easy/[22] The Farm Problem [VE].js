@@ -68,6 +68,7 @@ _________
 */
 //Your code should go here:
 
+"use strict";
 
 function animals(chickens, cows, pigs) {
     return chickens * 2 + (cows + pigs) * 4

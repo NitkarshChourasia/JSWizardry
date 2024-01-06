@@ -60,6 +60,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function sumPolygon(input_value){
     
     // n = number of sides
@@ -77,5 +79,9 @@ if (require.main == module){
     console.log(sumPolygon(6))
 }
 
+// We think that revision of code will take a lot of time but in actuality it doesn't take a lot of time, it is quick.
+// Whatever the reason for revision is! Whether code-refactoring or quick revision, or concept revision, or past style revision, etc,...
+
+// Code collobartion on these things are good, Whether we being the driver or navigator,...
 
 // complete.

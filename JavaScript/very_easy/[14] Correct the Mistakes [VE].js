@@ -60,9 +60,14 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function squared(input_number){
     return Math.pow(input_number, 2)
+    // return input_number ** 2
 }
+// so numbers with decimals can also have squares?
+// What kind of numbers can have squares? What kind of numbers cannot have squares?
 
 if (require.main == module){
     console.log(squared(5))

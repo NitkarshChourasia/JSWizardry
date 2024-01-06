@@ -56,3 +56,75 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+// Method 1: if else.
+function fifthIfElse() {
+    if (arguments.length >= 5) {
+        return typeof arguments[4];
+    }
+    else {
+
+        return "Not enough arguments";
+    }
+}
+
+
+// Method 2: Ternary.
+function fifthTernary() {
+    return arguments.length >= 5 ? typeof arguments[4] : "Not enough arguments";
+} // Best method in this case.
+
+
+// Method 3: Switch.
+function fifthSwitch() {
+    switch (arguments.length) {
+        case 5:
+            return typeof arguments[4];
+        default:
+            return "Not enough arguments";
+    }
+}
+
+
+// Method 4: Arrow.
+let fifthArrow = (...args) => args.length >= 5 ? typeof args[4] : "Not enough arguments";
+
+
+if (require.main == module) {
+    // Title
+    console.log("####  The Fifth Argument  ####");
+    // Test cases.
+
+    // Method 1: if else.
+    console.log("Method 1: if else.");
+    console.log(fifthIfElse(1, 2, 3, 4, 5)); // "number"
+    console.log(fifthIfElse("a", 2, 3, true, "five")); // "string"
+    console.log(fifthIfElse()); // "Not enough arguments"
+
+
+    // Method 2: Ternary.
+    console.log("Method 2: Ternary.");
+    console.log(fifthTernary(1, 2, 3, 4, 5)); // "number"
+    console.log(fifthTernary("a", 2, 3, true, "five")); // "string"
+    console.log(fifthTernary()); // "Not enough arguments"
+
+
+    // Method 3: Switch.
+    console.log("Method 3: Switch.");
+    console.log(fifthSwitch(1, 2, 3, 4, 5)); // "number"
+    console.log(fifthSwitch("a", 2, 3, true, "five")); // "string"
+    console.log(fifthSwitch()); // "Not enough arguments"
+
+    // Method 4: Arrow.
+    console.log("Method 4: Arrow.");
+    console.log(fifthArrow(1, 2, 3, 4, 5)); // "number"
+    console.log(fifthArrow("a", 2, 3, true, "five")); // "string"
+    console.log(fifthArrow()); // "Not enough arguments"
+
+    // End of script.
+}
+
+
+// 06-October-2023
+// complete.

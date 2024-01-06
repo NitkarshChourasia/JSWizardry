@@ -43,7 +43,9 @@ _________
 _________
 JavaScript Number Methods
 https://www.w3schools.com/js/js_number_methods.asp
-But with JavaScript, methods and properties are also available to primitive  values, because JavaScript treats primitive values as objects when executing  methods and …
+But with JavaScript, methods and properties are also available to primitive 
+ values, because JavaScript treats primitive values as objects when executing 
+ methods and …
 _________
 _________
 Converting Strings to Numbers
@@ -89,3 +91,81 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
+let toIntArrow = (str) => parseInt(str);
+let toStrArrow = (num) => num.toString();
+
+function toIntSFunc(str) {
+    return parseInt(str);
+}
+
+function toStrSFunc(num) {
+    return num.toString();
+}
+
+
+
+class StringAndNumberConverterUsedConstructor {
+    constructor() {
+        this.toInt = (str) => parseInt(str);
+        this.toStr = (num) => num.toString();
+    }
+}
+
+class StringAndNumberConverterUsedFunction {
+
+    toInt(str) {
+        return parseInt(str);
+    }
+
+    toStr(num) {
+        return num.toString();
+    }
+}
+
+
+if (require.main == module) {
+    // Title.
+    console.log("####  String to Integer and Vice Versa  ####");
+    // Test cases.
+
+    console.log("Test Cases:"); // Test Cases.
+    // Arrow functions.
+    console.log(toIntArrow("77")); // 77
+    console.log(toIntArrow("532")); // 532
+    console.log(toStrArrow(77)); // 77
+    console.log(toStrArrow(532)); // 532
+
+    // Standard functions.
+    console.log(toIntSFunc("77")); // 77
+    console.log(toIntSFunc("532")); // 532
+    console.log(toStrSFunc(77)); // 77
+    console.log(toStrSFunc(532)); // 532
+
+
+    // Classes.
+
+    // Class 1: Using constructor.
+
+    // obj1 = new StringAndNumberConverterUsedConstructor();
+
+    // console.log(obj1.toInt("77")); // 77
+    // console.log(obj1.toInt("532")); // 532
+    // console.log(obj1.toStr(77)); // 77
+    // console.log(obj1.toStr(532)); // 532
+
+    // Class 2: Using function.
+
+    // obj2 = new StringAndNumberConverterUsedFunction();
+
+    // console.log(obj2.toInt("77")); // 77
+    // console.log(obj2.toInt("532")); // 532
+    // console.log(obj2.toStr(77)); // 77
+    // console.log(obj2.toStr(532)); // 532
+
+    // End of script.
+}
+
+// 26-October-2023
+// incomplete

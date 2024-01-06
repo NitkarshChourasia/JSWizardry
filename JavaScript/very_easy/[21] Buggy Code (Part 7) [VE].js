@@ -66,6 +66,8 @@ function swap(input_number1, input_number2){
     return [input_number1, input_number2]
 }
 
+// Why use memory? for storing the variable
+
 if (require.main == module) {
     console.log(swap(100, 200))
     console.log(swap(44, 33))

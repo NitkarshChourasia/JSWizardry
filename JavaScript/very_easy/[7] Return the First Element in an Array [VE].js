@@ -71,6 +71,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function getFirstValue(arr) {
     return arr[0];
 }

@@ -71,6 +71,8 @@ _________
 */
 //Your code should go here:
 
+// Don't we have to import anything?
+// How we import things?
 function cubes(a) {
     return Math.pow(a, 3);
 }
@@ -81,3 +83,5 @@ if (require.main == console) {
     console.log(cubes(5))
     console.log(cubes(10))
 }
+
+// Most of the time make your code only your documentation.
