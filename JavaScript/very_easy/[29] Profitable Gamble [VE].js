@@ -57,9 +57,10 @@ _________
 */
 //Your code should go here:
 
+"use strict";
 
 function profitableGamble(prob, prize, pay) {
-    return (prob * prize) > pay;
+    return ((prob * prize) > pay) > 0;
 }
 
 if (require.main == module) {
@@ -69,3 +70,5 @@ if (require.main == module) {
 }
 
 // complete.
+
+// learn imaginative coding

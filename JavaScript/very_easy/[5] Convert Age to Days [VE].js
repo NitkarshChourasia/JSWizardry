@@ -51,14 +51,18 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function calcAge(ageYears) {
     return ageYears * 365;
 
 }
 
-if (require.main == console)
-{
+if (require.main == console) {
     console.log(calcAge(65))
     console.log(calcAge(0))
     console.log(calcAge(20))
 }
+
+// Will implement the proper leap year and last birthday and this birthday thing to this.
+// Can make a project out of it.

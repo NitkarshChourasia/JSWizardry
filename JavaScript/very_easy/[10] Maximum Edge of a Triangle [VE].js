@@ -66,6 +66,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function nextEdge(side1, side2) {
     return (side1 + side2) - 1;
 }

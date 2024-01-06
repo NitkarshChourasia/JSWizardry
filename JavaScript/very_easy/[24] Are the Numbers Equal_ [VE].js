@@ -55,7 +55,7 @@ _________
 function isSameNum(num1, num2){
     return num1 === num2
 }
-
+// Understand the three and two equal signs
 
 if (require.main == module)
 {
@@ -65,3 +65,5 @@ if (require.main == module)
 }
 
 // complete.
+
+// TODO: Can build a program and webapp word to number and number to word

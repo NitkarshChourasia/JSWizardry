@@ -73,6 +73,7 @@ _________
 */
 //Your code should go here:
 
+"use strict";
 
 function checkEquality(a, b){
     return a === b

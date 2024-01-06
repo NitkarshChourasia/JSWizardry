@@ -56,6 +56,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function circuitPower(voltage, current) {
     return voltage * current;
 }

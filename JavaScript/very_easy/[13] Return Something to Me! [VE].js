@@ -57,6 +57,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function giveMeSomething(input_string) {
     return `something ${input_string}`
 }

@@ -41,6 +41,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function points(input_2pointers, input_3pointers) {
     return input_2pointers * 2 + input_3pointers * 3
 }
@@ -51,5 +53,6 @@ if (require.main == module) {
     console.log(points(38, 8))
 }
 
+// Output visualization is good by using comments
 
 // complete.

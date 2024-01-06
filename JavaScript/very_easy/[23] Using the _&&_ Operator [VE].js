@@ -64,6 +64,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function and(bool1, bool2){
     return bool1 && bool2;
 }

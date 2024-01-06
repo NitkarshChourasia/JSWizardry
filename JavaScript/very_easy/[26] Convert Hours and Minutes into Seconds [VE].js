@@ -61,6 +61,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function convert(hours, minutes){
     return (hours * Math.pow(60, 2)) + (minutes * 60)
 }

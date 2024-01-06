@@ -78,6 +78,8 @@ _________
 */
 //Your code should go here:
 
+"use strict";
+
 function lessThan100(input_number1, input_number2){
     return input_number1 + input_number2 < 100
 }
